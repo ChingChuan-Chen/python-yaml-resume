@@ -2,7 +2,7 @@
 
 This repo provides a program to automatically generate my resume as a webpage and PDF from YAML.
 
-The file `generate.py` reads from `resume.yaml` to LaTex and markdown by using Jinja templates.
+The file `generate.py` reads from `resume.yaml` to pdf and html files by using Jinja templates.
 
 ## References
 
