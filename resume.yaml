@@ -5,9 +5,8 @@ conf:
   html: resume.html
   pdf: resume.pdf
 info:
-  name:
-    english: Jamal Chen
-    chinese: 陳慶全
+  name: Jamal Ching-Chuan Chen
+  alias: 陳慶全
   tags:
     - Data Engineer
     - Data Analyst
@@ -15,8 +14,8 @@ info:
   picture: selfie.JPG
 contact:
   phone:
-    private: +886-966-676-326
-    work: +886-963-855-707
+    - (private) +886-966-676-326
+    - (work) +886-963-855-707
   email: zw12356@gmail.com
   website: http://chingchuan-chen.github.io/
   location:
@@ -26,14 +25,11 @@ contact:
     country: Taiwan
   profiles:
     - network: facebook
-      username: celestial0230
-      url: https://www.facebook.com/celestial0230
+      url: www.facebook.com/celestial0230
     - network: linkedin
-      username: ching-chuan-chen-b6b19779
-      url: https://www.linkedin.com/in/ching-chuan-chen-b6b19779/
+      url: www.linkedin.com/in/celestial0230
     - network: github
-      username: ChingChuan-Chen
-      url: https://github.com/ChingChuan-Chen
+      url: github.com/ChingChuan-Chen
 about:
   My name is Jamal Chen and I am a data engineer and data analyst with 3+ years of experience in big data infrastructure,
   data preprocessing and modeling. I am an experienced R programmer in data preprocessing and modeling, also a experienced
@@ -190,16 +186,19 @@ awards:
 references:
   - name: Ray-Bing Chen
     position: Professor
-    organization: Department of Statistics, National Cheng Kung University
+    department: Department of Statistics
+    organization: National Cheng Kung University
     phone: +886-6-275-7575 ext. 53645
     email: rbchen@mail.ncku.edu.tw
   - name: Sheng-Mao Chang
     position: Associate Professor
-    organization: Department of Statistics, National Cheng Kung University
+    department: Department of Statistics
+    organization: National Cheng Kung University
     phone: +886-6-275-7575 ext. 53632
     email: smchang@mail.ncku.edu.tw
   - name: Jeng-Min Chiou
     position: Research Fellow
-    organization: Institute of Statistical Science, Academia Sinica
+    department: Institute of Statistical Science
+    organization: Academia Sinica
     phone: +886-2-2783-5611 ext 312
     email: jmchiou@stat.sinica.edu.tw

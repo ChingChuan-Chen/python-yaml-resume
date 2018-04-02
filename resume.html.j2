@@ -26,34 +26,112 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <title>{{ info.name.english }}</title>
   </head>
   <body>
-    <div class="container text-center" id="cv">
+    <div class="container" id="cv">
+      <!-- side Penal -->
       <div id="side">
       <!-- BASIC INFO -->
       <div id="info">
         {% if info.picture is defined %}
         <div id="photo"><img src="{{ info.picture }}"></div>
         {% endif %}
-        <div id="name"><h1>
-        {{ info.name.english }} {% if info.name.chinese is defined %}{{ info.name.chinese }}{% endif %}
+        <div id="name"><h1 class="text-center">
+        {{ info.name }} {% if info.alias is defined %}{{ info.alias }}{% endif %}
         {% if info.tags is defined %}
         <br/><span>{% for item in info.tags %}{{ item }}{{ " / " if not loop.last }}{% endfor %}</span>
         {% endif %}
         </h1></div>
       </div>
-
       <!-- CONTACT -->
+      <div class="box clearfix" id="contact">
+      <h2 class="text-left"><i class="fa fa-bullseye ico"></i> Contact</h2>
+      {% if contact.location is defined %}
+      <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+        <div class="title pull-right">{{ contact.location.address }}</div>
+        <div class="title pull-right">{{ contact.location.city }}, {{ contact.location.postalCode }} {{ contact.location.country }}</div>
+      </div>
+      {% endif %}
 
+      {% if contact.phone is defined %}
+      <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+        {% for phone in contact.phone %}
+          <div class="title {% if contact.phone|length == 1 %} only {% endif %} pull-right">{{ phone }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if contact.email is defined %}
+      <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+        <div class="title only pull-right"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></div>
+      </div>
+      {% endif %}
+
+      {% if contact.profiles is defined %}
+      {% for profile in contact.profiles %}
+        {% if profile.network == "facebook" %}
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-facebook fa-fw"></span></div>
+          <div class="title only pull-right"><a href="https://{{ profile.url }}">{{ profile.url }}</a></div>
+        </div>
+        {% endif %}
+        {% if profile.network == "linkedin" %}
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+          <div class="title only pull-right"><a href="https://{{ profile.url }}">{{ profile.url }}</a></div>
+        </div>
+        {% endif %}
+        {% if profile.network == "github" %}
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+          <div class="title only pull-right"><a href="https://{{ profile.url }}">{{ profile.url }}</a></div>
+        </div>
+        {% endif %}
+      {% endfor %}
+      {% endif %}
+      </div>
       <!-- EDUCATION -->
 
       <!-- JOURNALS -->
 
       <!-- LANGUAGES -->
-
-      <!-- REFERENCES -->
+      {% if languages is defined %}
+      <div class="box" id="languages">
+        <h2><i class="fa fa-language ico"></i> Languages</h2>
+        <ul class="list-group">
+          {% for language in languages %}
+          <li class="list-group-item">{{ language.language }}<span class="skill badge pull-right">{{ language.fluency }}</span></li>
+          {% endfor %}
+        </ul>
       </div>
+      {% endif %}
+      <!-- REFERENCES -->
+      {% if references is defined %}
+      <div class="box" id="references">
+        <h2><i class="fa fa-check-square ico"></i> References</h2>
+        {% for reference in references %}
+        <div class="description"><h3>{{ reference.name }}</h3>
+        <p>{{ reference.position }}</p>
+        <p style="margin: 0px;">{{ reference.department }}</p>
+        <p>{{ reference.organization }}</p>
+        <p>{{ reference.phone }}</p>
+        <a href="mailto:{{ reference.email }}">{{ reference.email }}</a>
+        </div><br/>
+        {% endfor %}
+      </div>
+      {% endif %}
+      </div>
+
+      <!-- Main Penal -->
       <div id="main">
       <!-- ABOUT -->
-
+      {% if about is defined %}
+      <div class="box" id="about">
+        <h2><i class="fa fa-user ico"></i> About</h2>
+        <p>{{ about }}</p>
+      </div>
+      {% endif %}
       <!-- WORK EXPERIENCE -->
 
       <!-- SKILLS -->
