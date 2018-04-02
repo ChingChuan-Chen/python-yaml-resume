@@ -26,6 +26,11 @@ ul {
     -webkit-padding-start: 40px;
 }
 
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 .container {
     padding: 0;
     position: relative;
@@ -164,7 +169,68 @@ ul {
     margin: 0 0 2px;
 }
 
-#education, #skill {
+#award_list, #education {
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: relative;
+    padding: 1em 0;
     list-style: none;
+}
+
+#award_list:before, #education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+
+#award_list li, #education li {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+
+#award_list .date, #education .date {
+    width: 14%;
+    background: #fff;
+    padding: 10px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#award_list .description, #education .description {
+    width: 83%;
+    display: inline-block;
+    background: #eee;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+#awards .description h3, #education .description h3 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+#awards .description p, #education .description p {
+    margin-top: 5px;
+    padding: 0;
 }
 

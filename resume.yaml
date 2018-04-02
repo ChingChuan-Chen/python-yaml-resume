@@ -177,12 +177,21 @@ journals:
     number: 1
     website: https://journal.r-project.org/archive/2017/RJ-2017-013/index.html
 awards:
-  - title: TSMC Kaggle Competition for the Defect Recognition with Deep Learning
-    date: 2017
+  - title: TSMC Kaggle Competition for the Defect Recognition
+    date: December 2017
     awarder: Third Place
-  - title: 2014 Competition for Data Analysis with R in Taiwan
-    date: 2014
+    description:
+      A internal competition in TSMC. Its purpose is to make classification of defects able to judge automatically by machine for lessening human cost.
+      They provides 3000 pictures of 4 types of defects and let employees fit a deep learning model to classify. Then send the model to the platform for
+      get the accuracy rate of testing set (1200 pictures.).
+  - title: Competition for Data Analysis with R in Taiwan
+    date: August 2014
     awarder: Honorable Mention
+    description:
+      A national competition in Taiwan. Its purpose is to let participants find their own topic in given data and try to explain by data.
+      The whole analysis need to be done by R. The data is collected from a registering system created by Taiwan governmnet of the actual
+      selling price of real estate. Our team chose to predict the price of house from a messy data. Each team had the times of a day to
+      finish their report. We used half a day to clean data and visualize the data. Other half a day is used in modeling and writing report.
 references:
   - name: Ray-Bing Chen
     position: Professor

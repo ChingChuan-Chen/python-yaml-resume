@@ -137,9 +137,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <!-- SKILLS -->
 
       <!-- AWARDS -->
-
+      {% if awards is defined %}
+      <div class="box" id="awards">
+        <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+        <ul id="award_list" class="clearfix">
+          {% for award in awards %}
+          <li>
+            <div class="date pull-left">{{ award.date }}</div>
+            <div class="description pull-right">
+              <h3>{{ award.title }}</h3>
+              <p><i class="fa fa-trophy ico"></i>{{ award.awarder }}</p>
+              {% if award.description is defined %}
+              <p>{{ award.description }}</p>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-
+      {% endif %}
+      </div>
     </div>
   </body>
 </html>
