@@ -35,13 +35,13 @@ about:
   data preprocessing and modeling. I am an experienced R programmer in data preprocessing and modeling, also a experienced
   Linux maintainer in automated process and system service management. I am familiar with packaging codes and reusing for
   efficient and fast development of applications. Also, I can give insights from data and provides pricture for making decisions.
-education:
+educations:
   - degree: Master
     area: Statistics
     university: National Cheng Kung University
     location: Tainan, TW
     gpa: 4.00
-    date: 2012.09-2014.09
+    date: 2012.09 2014.09
     thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection
     advisor: Ray-Bing Chen
     abstract:
@@ -54,7 +54,7 @@ education:
     university: National Cheng Kung University
     location: Tainan, TW
     gpa: 3.50
-    date: 2008.09-2012.06
+    date: 2008.09 2012.06
 skills:
   - name: R
     level: Master
@@ -172,6 +172,7 @@ journals:
   - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee
     title: "milr: Multiple-Instance Logistic Regression with Lasso Penalty"
     journal: The R Journal
+    date: 2017
     page: 446-457
     volume: 9
     number: 1

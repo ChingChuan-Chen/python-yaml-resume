@@ -92,9 +92,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       {% endif %}
       </div>
       <!-- EDUCATION -->
-
-      <!-- JOURNALS -->
-
+      {% if educations is defined %}
+      <div class="box" id="educations">
+        <h2><i class="fa fa-certificate ico"></i> Education</h2>
+        <ul id="education_list" class="clearfix">
+          {% for degree in educations %}
+          <li>
+            <div class="date pull-left">{{ degree.date }}</div>
+            <div class="description pull-right">
+              <h3>{{ degree.university }}, {{ degree.location }}</h3>
+              <p><i class="fa fa-graduation-cap ico"></i>{{ degree.degree }}</p>
+              {% if degree.gpa is defined %}
+              <p>GPA: {{ degree.gpa }}</p>
+              {% endif %}
+              {% if degree.thesis is defined %}
+              <h4>Thesis: </h4>
+              <p>{{ degree.thesis }}</p>
+              {% endif %}
+              {% if degree.advisor is defined %}
+              <h4>Advisor: </h4>
+              <p>{{ degree.advisor }}</p>
+              {% endif %}
+              {% if degree.abstract is defined %}
+              <h4>Abstract: </h4>
+              <p>{{ degree.abstract }}</p>
+              {% endif %}
+              </p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
       <!-- LANGUAGES -->
       {% if languages is defined %}
       <div class="box" id="languages">
@@ -136,6 +165,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       <!-- SKILLS -->
 
+
       <!-- AWARDS -->
       {% if awards is defined %}
       <div class="box" id="awards">
@@ -154,6 +184,40 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           </li>
           {% endfor %}
         </ul>
+      </div>
+      {% endif %}
+      <!-- JOURNALS -->
+      {% if journals is defined %}
+      <div class="box" id="journals">
+        <h2><i class="fa fa-book ico"></i> Journals</h2>
+        <div class="journal panel panel-default">
+          {% for journal in journals %}
+          <div class="panel-heading">
+            <div class="name panel-title">{{ journal.title }}</div>
+          </div>
+          <div class="panel-body">
+            <div class="authors">{{ journal.authors }}</div>
+            <div class="journal_detail">
+              <i>{{ journal.journal }}</i> ({{ journal.date }})
+              {% if journal.volume is defined %}
+              {{ journal.volume }}
+              {% endif %}
+              {% if journal.number is defined %}
+              :{{ journal.number }}
+              {% endif %}
+              {% if journal.page is defined %}
+              , pages {{ journal.page }}
+              {% endif %}.
+            </div>
+            {% if journal.website is defined %}
+            <div class="website">
+              <a href="{{ journal.website }}"><i class="fa fa-globe ico"></i> {{ journal.website }}</a>
+            </div>
+            {% endif %}
+            <p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+          </div>
+          {% endfor %}
+        </div>
       </div>
       {% endif %}
       </div>

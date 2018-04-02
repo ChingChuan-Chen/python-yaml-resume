@@ -36,7 +36,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 1050px;
-    height: 1550px;
+    height: 2550px;
     background-color: white;
 }
 
@@ -169,7 +169,7 @@ li {
     margin: 0 0 2px;
 }
 
-#award_list, #education {
+#award_list, #education_list {
     margin-top: 20px;
     margin-bottom: 0;
     position: relative;
@@ -177,7 +177,7 @@ li {
     list-style: none;
 }
 
-#award_list:before, #education:before {
+#award_list:before, #education_list:before {
   width: 5px;
   height: 100%;
   position: absolute;
@@ -196,14 +196,14 @@ li {
 }
 
 
-#award_list li, #education li {
+#award_list li, #education_list li {
   width: 100%;
   z-index: 2;
   position: relative;
   float: left;
 }
 
-#award_list .date, #education .date {
+#award_list .date, #education_list .date {
     width: 14%;
     background: #fff;
     padding: 10px;
@@ -211,7 +211,11 @@ li {
     display: inline-block;
 }
 
-#award_list .description, #education .description {
+#education_list .date {
+    width: 21%;
+}
+
+#award_list .description, #education_list .description {
     width: 83%;
     display: inline-block;
     background: #eee;
@@ -222,15 +226,30 @@ li {
     border-right: 1px solid #ccc;
 }
 
-#awards .description h3, #education .description h3 {
+#education_list .description {
+    width: 78%;
+}
+
+#award_list .description h3, #education_list .description h3 {
     font-size: 1.2em;
     margin: 0;
     padding: 0;
     font-weight: 700;
 }
 
-#awards .description p, #education .description p {
+#award_list .description h4, #education_list .description h4 {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+#award_list .description p, #education_list .description p {
     margin-top: 5px;
     padding: 0;
+}
+
+.journal .journal_detail {
+    opacity: 0.8;
 }
 
