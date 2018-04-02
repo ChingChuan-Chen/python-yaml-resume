@@ -1,0 +1,67 @@
+{#
+Copyright (C) 2018 Jamal Chen
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#}
+
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>{{ info.name.english }}</title>
+  </head>
+  <body>
+    <div class="container text-center" id="cv">
+      <div id="side">
+      <!-- BASIC INFO -->
+      <div id="info">
+        {% if info.picture is defined %}
+        <div id="photo"><img src="{{ info.picture }}"></div>
+        {% endif %}
+        <div id="name"><h1>
+        {{ info.name.english }} {% if info.name.chinese is defined %}{{ info.name.chinese }}{% endif %}
+        {% if info.tags is defined %}
+        <br/><span>{% for item in info.tags %}{{ item }}{{ " / " if not loop.last }}{% endfor %}</span>
+        {% endif %}
+        </h1></div>
+      </div>
+
+      <!-- CONTACT -->
+
+      <!-- EDUCATION -->
+
+      <!-- JOURNALS -->
+
+      <!-- LANGUAGES -->
+
+      <!-- REFERENCES -->
+      </div>
+      <div id="main">
+      <!-- ABOUT -->
+
+      <!-- WORK EXPERIENCE -->
+
+      <!-- SKILLS -->
+
+      <!-- AWARDS -->
+
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@charset "utf-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    color: #6495ed;
+    line-height: 1.1;
+}
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+
+.container {
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    width: 1050px;
+    height: 1550px;
+    background-color: white;
+}
+
+#side {
+    position: absolute;
+    width: 360px;
+    height: 100%;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#main {
+    position: relative;;
+    margin-left: 360px;
+    min-height: 100%;
+    padding: 20px;
+}
+
+#id {
+    text-align: center;
+}
+
+#name h1 {
+    color: #050505;
+    font-size: 30px;
+}
+
+#name h1 span {
+    color: #5b5b5b;
+    font-size: 20px;
+}
+
+#photo {
+  width: 160px;
+  height: 160px;
+  margin-top: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+
+#photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+

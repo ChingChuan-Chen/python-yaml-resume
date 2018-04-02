@@ -1,0 +1,205 @@
+conf:
+  yaml: resume.yaml
+  css: style.css
+  template: resume.html.j2
+  html: resume.html
+  pdf: resume.pdf
+info:
+  name:
+    english: Jamal Chen
+    chinese: 陳慶全
+  tags:
+    - Data Engineer
+    - Data Analyst
+    - R
+  picture: selfie.JPG
+contact:
+  phone:
+    private: +886-966-676-326
+    work: +886-963-855-707
+  email: zw12356@gmail.com
+  website: http://chingchuan-chen.github.io/
+  location:
+    address: No.114, Guangfeng St., Pingzhen Dist.
+    postalCode: 32452
+    city: Taoyuan City
+    country: Taiwan
+  profiles:
+    - network: facebook
+      username: celestial0230
+      url: https://www.facebook.com/celestial0230
+    - network: linkedin
+      username: ching-chuan-chen-b6b19779
+      url: https://www.linkedin.com/in/ching-chuan-chen-b6b19779/
+    - network: github
+      username: ChingChuan-Chen
+      url: https://github.com/ChingChuan-Chen
+about:
+  My name is Jamal Chen and I am a data engineer and data analyst with 3+ years of experience in big data infrastructure,
+  data preprocessing and modeling. I am an experienced R programmer in data preprocessing and modeling, also a experienced
+  Linux maintainer in automated process and system service management. I am familiar with packaging codes and reusing for
+  efficient and fast development of applications. Also, I can give insights from data and provides pricture for making decisions.
+education:
+  - degree: Master
+    area: Statistics
+    university: National Cheng Kung University
+    location: Tainan, TW
+    gpa: 4.00
+    date: 2012.09-2014.09
+    thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection
+    advisor: Ray-Bing Chen
+    abstract:
+      For imbalanced data, the density ratio estimation (Kanamori et al. (2009)) is good solution
+      to solve it. However, the performance of density ratio is poor when data is sparse in the
+      high dimension. Therefore, we propose using projection to perform dimension reduction.
+      Our result shows that the proposed method is better than the original method.
+  - degree: Bachelor
+    area: Economics and Statistics (Double major)
+    university: National Cheng Kung University
+    location: Tainan, TW
+    gpa: 3.50
+    date: 2008.09-2012.06
+skills:
+  - name: R
+    level: Master
+    description:
+      - Skilled at vectorizing programming and parallel programming.
+      - Mastering data.table for data manipulation in organizing billions of data.
+      - Good at massive data processing (100 billions of data) in MPI.
+      - Mastering lattice, ggplot2, plotly and shiny for data visualization.
+      - Model building for statistical models and machine learning.
+      - Linking with other programming languages (C/C++, Java) for improving performance.
+      - Package development for reusing code and team development.
+  - name: MatLab
+    level: Master
+    description:
+      - Skilled at vectorizing programming and parallel programming.
+      - Good at data manipulation and data visualization.
+      - Ability to link C++ for accelerating programs.
+  - name: SQL
+    level: Advanced
+    description: Familiar with Oracle SQL and MySQL SQL.
+  - name: Statistics
+    level: Advanced
+    description:
+      - Familiar with thoeries and good at explaining meaning for results.
+      - Skilled at hypothesis testing, statistical models, change point detection, clustering and dimension reduction.
+  - name: Machine Learning
+    level: High-Intermediate
+    description:
+      - Familiar with thoeries and using in real cases.
+      - Skilled at supervised learning.
+  - name: Python
+    level: High-Intermediate
+    description: Using Keras for the applications related to deep learning.
+  - name: Deep Learning
+    level: Intermediate
+    description: Using Keras for the application wrtten in Python.
+  - name: Shell Script
+    level: Intermediate
+    description: Building automated process and automated deployment of applications.
+  - name: Spark
+    level: Intermediate
+    description: Development of a loader for general usage moving data from Oracle to Hive with ETL.
+  - name: C++
+    level: Intermediate
+    description: Not so familiar with OOP, but good at using Armadillo and Eigen to accelerate program in R, MatLab.
+  - name: MongoDB
+    level: Elementary
+    description: Build a single node for ETC data storage.
+  - name: Scala
+    level: Elementary
+    description: Only used in one project and move development to Python after.
+  - name: Web (HTML, CSS, Javascript)
+    level: Elementary
+experience:
+  - organization: CIM Department, Taiwan Semiconductor Manufacturing Company Limited
+    position: Junior Engineer
+    date: 2016.07-present
+    summary: Data engineer and data analyst on semiconductor manufacturing data.
+    highlights:
+      - Construct a big data solution for wafer manufacturing data by myself. The wafer manufacturing data is complex and multifarious,
+        it contains the manufacturing history of wafer, measurements of production and control wafer and data collected from the detectors in tools.
+        Therefore, how to design the data schema to store data in a big data and the time cost to query data are difficult. I try some sql-on-hadoop
+        solutions to fit in our developing environment which uses SQL a lot. Finally, I use Apache Hive to store massive and messy data, and use
+        Apache Spark to synchronize Oracle database and Apache Hive.
+      - Build up R working environment, setup several Rstudio servers for developers, build up a mini-CRAN for those servers without network to get
+        R packages installed, packing common function as several R packages like auto-install ROracle, Oracle SQL automatic build-up, graphic
+        functions and Hive connector etc.
+      - Analyze the semiconductor manufacturing data like offline/inline measurement, tool sensors or yield related issues.
+      - Open R workshop to teach colleagues to use R more professionally and efficiently, introduct
+        new R packages, and use R to perform machine learning and data analysis.
+      - Construct R web service for other colleagues easily using R to generate graphs or perform machine learning without other knowledge.
+      - Construct local git server powered by GitLab CE for the management of code, project in department.
+      - Get 3rd place on the 1st TSMC Kaggle of classification of defect images by deep learning with our customized neural network.
+      - Identifies the bad tools or key process with statistical methods.
+      - Using statistical method to detect the shift of location or variance on the measurements.
+  - organization: Institute of Statistical Science, Academia Sinica
+    position: Research Assistant
+    date: 2015.09-2016.06
+    summary: Funcational data analysis of traffic data provided by Taiwan freeway bureau.
+    highlights:
+      - Automatically downloading open data from websites with R and parsing data in XML format for saving data to MongoDB.
+      - Constructing the statistical method with MatLab and R.
+      - Preprocessing data and analyzing the relationship between flow, speed and occupancy rate.
+      - Building an interactive data visualization for the highway data with shiny in R.
+projects:
+  - name: Automatically Generated Resume
+    summary: A tool for automatically generated resume written in Python by YAML and Jinja2.
+    url: https://github.com/ChingChuan-Chen/python-yaml-resume
+    highlights:
+      - Easily maintain resume by modifying the YAML file.
+      - Simply changing Jinja template for different themes.
+  - name: R package RcppBlaze
+    summary: Blaze is an open-source, high-performance C++ math library for dense and sparse arithmetic. This package provides the header files for linking Blaze library in Rcpp.
+    url: https://github.com/ChingChuan-Chen/RcppBlaze
+    highlights:
+      - Full API from R to Blaze under the RcppArmadillo-like framework.
+  - name: R package milr
+    summary: This package performs maximum likelihood estimation for multiple-instance logistic regression utilizing EM algorithm with LASSO penalty.
+    url: https://github.com/PingYangChen/milr
+    highlights:
+      - A first R package address the analysis of the multiple instance data.
+      - This package provides a MLE with EM algorithm under the framework of logistic regression.
+      - Providing not only prediction, but also variable selection with L1 panalty.
+      - The performance issues are addressed by using RcppArmadillo.
+languages:
+  - language: Chinese
+    fluency: Native speaker
+  - language: English
+    fluency: Conversant
+    certification: TOEIC 675 (2010)
+  - language: Japanese
+    fluency: Basic Knowledge
+    certification: None
+journals:
+  - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee
+    title: "milr: Multiple-Instance Logistic Regression with Lasso Penalty"
+    journal: The R Journal
+    page: 446-457
+    volume: 9
+    number: 1
+    website: https://journal.r-project.org/archive/2017/RJ-2017-013/index.html
+awards:
+  - title: TSMC Kaggle Competition for the Defect Recognition with Deep Learning
+    date: 2017
+    awarder: Third Place
+  - title: 2014 Competition for Data Analysis with R in Taiwan
+    date: 2014
+    awarder: Honorable Mention
+references:
+  - name: Ray-Bing Chen
+    position: Professor
+    organization: Department of Statistics, National Cheng Kung University
+    phone: +886-6-275-7575 ext. 53645
+    email: rbchen@mail.ncku.edu.tw
+  - name: Sheng-Mao Chang
+    position: Associate Professor
+    organization: Department of Statistics, National Cheng Kung University
+    phone: +886-6-275-7575 ext. 53632
+    email: smchang@mail.ncku.edu.tw
+  - name: Jeng-Min Chiou
+    position: Research Fellow
+    organization: Institute of Statistical Science, Academia Sinica
+    phone: +886-2-2783-5611 ext 312
+    email: jmchiou@stat.sinica.edu.tw
