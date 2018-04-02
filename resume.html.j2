@@ -184,12 +184,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <p>{{ project.summary }}</p>
             {% endif %}
             {% if project.highlights is defined %}
-            <div>Highlights</div>
-            <ul class="list-group">
-            {% for highlight in project.highlights %}
-              <li class="list-group-item">{{ highlight }}</li>
-            {% endfor %}
-            </ul>
+            <h4>Highlights</h4>
+              <ul class="list-group">
+              {% for highlight in project.highlights %}
+                <li class="list-group-item">{{ highlight }}</li>
+              {% endfor %}
+              </ul>
             {% endif %}
           </div>
           {% endfor %}
