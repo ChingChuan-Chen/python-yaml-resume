@@ -109,9 +109,10 @@ skills:
   - name: Web (HTML, CSS, Javascript)
     level: Elementary
 experience:
-  - organization: CIM Department, Taiwan Semiconductor Manufacturing Company Limited
+  - organization: Taiwan Semiconductor Manufacturing Company Limited
+    department: CIM Department
     position: Junior Engineer
-    date: 2016.07-present
+    date: July 2016 - Present
     summary: Data engineer and data analyst on semiconductor manufacturing data.
     highlights:
       - Construct a big data solution for wafer manufacturing data by myself. The wafer manufacturing data is complex and multifarious,
@@ -130,9 +131,10 @@ experience:
       - Get 3rd place on the 1st TSMC Kaggle of classification of defect images by deep learning with our customized neural network.
       - Identifies the bad tools or key process with statistical methods.
       - Using statistical method to detect the shift of location or variance on the measurements.
-  - organization: Institute of Statistical Science, Academia Sinica
+  - organization: Academia Sinica
+    department: Institute of Statistical Science
     position: Research Assistant
-    date: 2015.09-2016.06
+    date: September 2015 - June 2016.06
     summary: Funcational data analysis of traffic data provided by Taiwan freeway bureau.
     highlights:
       - Automatically downloading open data from websites with R and parsing data in XML format for saving data to MongoDB.

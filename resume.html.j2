@@ -165,7 +165,37 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       <!-- SKILLS -->
 
-
+      <!-- PROJECTS -->
+      {% if projects is defined %}
+      <div class="box" id="projects">
+        <h2><i class="fa fa-tasks ico"></i> Projects</h2>
+        <div class="panel panel-default">
+          {% for project in projects %}
+          <div class="panel-heading">
+            <div class="name panel-title">{{ project.name }}</div>
+          </div>
+          <div class="panel-body">
+            {% if project.url is defined %}
+            <div class="url">
+              <a href="{{ project.url }}"><i class="fa fa-globe ico"></i> {{ project.url }}</a>
+            </div>
+            {% endif %}
+            {% if project.summary is defined %}
+            <p>{{ project.summary }}</p>
+            {% endif %}
+            {% if project.highlights is defined %}
+            <div>Highlights</div>
+            <ul class="list-group">
+            {% for highlight in project.highlights %}
+              <li class="list-group-item">{{ highlight }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
       <!-- AWARDS -->
       {% if awards is defined %}
       <div class="box" id="awards">
@@ -214,7 +244,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
               <a href="{{ journal.website }}"><i class="fa fa-globe ico"></i> {{ journal.website }}</a>
             </div>
             {% endif %}
-            <p>Innovative middle-out compression algorithm that changes the way we store data.</p>
           </div>
           {% endfor %}
         </div>
