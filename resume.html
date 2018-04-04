@@ -87,9 +87,18 @@
       <div class="box" id="languages">
         <h2><i class="fa fa-language ico"></i> Languages</h2>
         <ul class="list-group">
-          <li class="list-group-item">Chinese<span class="skill badge pull-right">Native speaker</span></li>
-          <li class="list-group-item">English<span class="skill badge pull-right">Conversant</span></li>
-          <li class="list-group-item">Japanese<span class="skill badge pull-right">Basic Knowledge</span></li>
+          <li class="list-group-item">
+          <i class="fa fa-chevron-circle-right ico"></i> Chinese
+          <span class="skill badge pull-right">Native speaker</span>
+          </li>
+          <li class="list-group-item">
+          <i class="fa fa-chevron-circle-right ico"></i> English
+          <span class="skill badge pull-right">Conversant</span>
+          </li>
+          <li class="list-group-item">
+          <i class="fa fa-chevron-circle-right ico"></i> Japanese
+          <span class="skill badge pull-right">Basic Knowledge</span>
+          </li>
         </ul>
       </div>
       <!-- REFERENCES -->
@@ -127,9 +136,46 @@
         <p>My name is Jamal Chen and I am a data engineer and data analyst with 3+ years of experience in big data infrastructure, data preprocessing and modeling. I am an experienced R programmer in data preprocessing and modeling, also a experienced Linux maintainer in automated process and system service management. I am familiar with packaging codes and reusing for efficient and fast development of applications. Also, I can give insights from data and provides pricture for making decisions.</p>
       </div>
       <!-- WORK EXPERIENCE -->
-
-      <!-- SKILLS -->
-
+      <div class="box" id="experiences">
+        <h2><i class="fa fa-suitcase ico"></i> Work Experiences</h2>
+        <div class="job_org">
+          <h3>Taiwan Semiconductor Manufacturing Company Limited</h3>
+          <p class="location">Taichung, Taiwan</p>
+          <p class="date">July 2016 - Present</p>
+        </div>
+        <div class="job_detail">
+          <h3 class="job_title">Junior Engineer, CIM Department</h3>
+          <p class="summary">Data engineer and data analyst on semiconductor manufacturing data.</p>
+          <h4>Highlights</h4>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Construct a big data solution for wafer manufacturing data by myself. The wafer manufacturing data is complex and multifarious, it contains the manufacturing history of wafer, measurements of production and control wafer and data collected from the detectors in tools. Therefore, how to design the data schema to store data in a big data and the time cost to query data are difficult. I try some sql-on-hadoop solutions to fit in our developing environment which uses SQL a lot. Finally, I use Apache Hive to store massive and messy data, and use Apache Spark to synchronize Oracle database and Apache Hive.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Build up R working environment, setup several Rstudio servers for developers, build up a mini-CRAN for those servers without network to get R packages installed, packing common function as several R packages like auto-install ROracle, Oracle SQL automatic build-up, graphic functions and Hive connector etc.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Analyze the semiconductor manufacturing data like offline/inline measurement, tool sensors or yield related issues.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Open R workshop to teach colleagues to use R more professionally and efficiently, introduct new R packages, and use R to perform machine learning and data analysis.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Construct R web service for other colleagues easily using R to generate graphs or perform machine learning without other knowledge.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Construct local git server powered by GitLab CE for the management of code, project in department.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Get 3rd place on the 1st TSMC Kaggle of classification of defect images by deep learning with our customized neural network.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Identifies the bad tools or key process with statistical methods.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Using statistical method to detect the shift of location or variance on the measurements.</li>
+          </ul>
+        </div>
+        <div class="job_org">
+          <h3>Academia Sinica</h3>
+          <p class="location">Taipei, Taiwan</p>
+          <p class="date">September 2015 - June 2016</p>
+        </div>
+        <div class="job_detail">
+          <h3 class="job_title">Research Assistant, Institute of Statistical Science</h3>
+          <p class="summary">Funcational data analysis of traffic data provided by Taiwan freeway bureau.</p>
+          <h4>Highlights</h4>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Automatically downloading open data from websites with R and parsing data in XML format for saving data to MongoDB.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Constructing the statistical method with MatLab and R.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Preprocessing data and analyzing the relationship between flow, speed and occupancy rate.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building an interactive data visualization for the highway data with shiny in R.</li>
+          </ul>
+        </div>
+      </div>
       <!-- PROJECTS -->
       <div class="box" id="projects">
         <h2><i class="fa fa-tasks ico"></i> Projects</h2>
@@ -142,10 +188,10 @@
               <a href="https://github.com/ChingChuan-Chen/python-yaml-resume"><i class="fa fa-globe ico"></i> https://github.com/ChingChuan-Chen/python-yaml-resume</a>
             </div>
             <p>A tool for automatically generated resume written in Python by YAML and Jinja2.</p>
-            <h4>Highlights</h4>
+              <h3>Highlights</h3>
               <ul class="list-group">
-                <li class="list-group-item">Easily maintain resume by modifying the YAML file.</li>
-                <li class="list-group-item">Simply changing Jinja template for different themes.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Easily maintain resume by modifying the YAML file.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Simply changing Jinja template for different themes.</li>
               </ul>
           </div>
           <div class="panel-heading">
@@ -156,9 +202,9 @@
               <a href="https://github.com/ChingChuan-Chen/RcppBlaze"><i class="fa fa-globe ico"></i> https://github.com/ChingChuan-Chen/RcppBlaze</a>
             </div>
             <p>Blaze is an open-source, high-performance C++ math library for dense and sparse arithmetic. This package provides the header files for linking Blaze library in Rcpp.</p>
-            <h4>Highlights</h4>
+              <h3>Highlights</h3>
               <ul class="list-group">
-                <li class="list-group-item">Full API from R to Blaze under the RcppArmadillo-like framework.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Full API from R to Blaze under the RcppArmadillo-like framework.</li>
               </ul>
           </div>
           <div class="panel-heading">
@@ -169,12 +215,12 @@
               <a href="https://github.com/PingYangChen/milr"><i class="fa fa-globe ico"></i> https://github.com/PingYangChen/milr</a>
             </div>
             <p>This package performs maximum likelihood estimation for multiple-instance logistic regression utilizing EM algorithm with LASSO penalty.</p>
-            <h4>Highlights</h4>
+              <h3>Highlights</h3>
               <ul class="list-group">
-                <li class="list-group-item">A first R package address the analysis of the multiple instance data.</li>
-                <li class="list-group-item">This package provides a MLE with EM algorithm under the framework of logistic regression.</li>
-                <li class="list-group-item">Providing not only prediction, but also variable selection with L1 panalty.</li>
-                <li class="list-group-item">The performance issues are addressed by using RcppArmadillo.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> A first R package address the analysis of the multiple instance data.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> This package provides a MLE with EM algorithm under the framework of logistic regression.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Providing not only prediction, but also variable selection with L1 panalty.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> The performance issues are addressed by using RcppArmadillo.</li>
               </ul>
           </div>
         </div>
@@ -222,6 +268,83 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- SKILLS -->
+      <div class="box" id="skills">
+        <h2><i class="fa fa-wrench ico"></i> Skills</h2>
+        <ul class="list-group">
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">R
+              <span class="skill badge pull-right">Master</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Skilled at vectorizing programming and parallel programming.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Mastering data.table for data manipulation in organizing billions of data.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Good at massive data processing (100 billions of data) in MPI.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Mastering lattice, ggplot2, plotly and shiny for data visualization.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Model building for statistical models and machine learning.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Linking with other programming languages (C/C++, Java) for improving performance.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Package development for reusing code and team development.</li>
+          </ul>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">MatLab
+              <span class="skill badge pull-right">Master</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Skilled at vectorizing programming and parallel programming.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Good at data manipulation and data visualization.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Ability to link C++ for accelerating programs.</li>
+          </ul>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">SQL
+              <span class="skill badge pull-right">Advanced</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with Oracle SQL and MySQL SQL.</li>
+          </ul>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">Statistics
+              <span class="skill badge pull-right">Advanced</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with thoeries and good at explaining meaning for results.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Skilled at hypothesis testing, statistical models, change point detection, clustering and dimension reduction.</li>
+          </ul>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">Machine Learning
+              <span class="skill badge pull-right">High-Intermediate</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with thoeries and using in real cases.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Skilled at supervised learning.</li>
+          </ul>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">Python
+              <span class="skill badge pull-right">High-Intermediate - Familiar with numpy and pandas. - Familiar with 2 deep learning frameworks, Keras and mxnet. - Familiar with PySpark.</span>
+            </h3>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">Shell Script
+              <span class="skill badge pull-right">Intermediate</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building automated process and automated deployment of applications.</li>
+          </ul>
+          </li>
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">C++
+              <span class="skill badge pull-right">Intermediate</span>
+            </h3>
+          <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Not so familiar with OOP, but good at using Armadillo and Eigen to accelerate program in R, MatLab.</li>
+          </ul>
+          </li>
+        </ul>
       </div>
       </div>
     </div>

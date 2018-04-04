@@ -36,7 +36,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 1050px;
-    height: 2550px;
+    height: 5100px;
     background-color: white;
 }
 
@@ -90,7 +90,7 @@ li {
 }
 
 .box{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-bottom: 10px;
 }
 
@@ -181,7 +181,7 @@ li {
   width: 5px;
   height: 100%;
   position: absolute;
-  left: 35px;
+  left: 45px;
   top: 0;
   content: ' ';
   display: block;
@@ -195,6 +195,9 @@ li {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
+#education_list:before {
+    left: 30px;
+}
 
 #award_list li, #education_list li {
   width: 100%;
@@ -204,14 +207,20 @@ li {
 }
 
 #award_list .date, #education_list .date {
+    margin-top: 7px;
     width: 14%;
-    background: #fff;
-    padding: 10px;
+    color: #eee;
+    padding: 9px;
     font-weight: 700;
     display: inline-block;
+    border-radius: 50%;
+    background: #334960;
+    box-shadow: 0 0 3px 3px #334960, inset 0 0 3px 3px #334960;
+    text-align: center;
 }
 
 #education_list .date {
+    padding: 5px;
     width: 21%;
 }
 
@@ -253,9 +262,53 @@ li {
     opacity: 0.8;
 }
 
-#projects h4 {
+#projects h3 {
     font-size: 1.0em;
     margin: 0;
     padding: 0;
     font-weight: 700;
+}
+
+h3.skill-item {
+    color: #637cd3;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.job_org {
+    margin-left: 3%;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.job_detail {
+    padding-left: 5%;
+    width: 100%
+}
+
+.job_org h3, .job_detail h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.job_org .location {
+    margin-bottom: 1px;
+}
+
+.job_org .date {
+    opacity: 0.7;
+    margin-bottom: 1px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.job_detail h4 {
+    font-size: 1em;
+    font-weight: bold;
 }

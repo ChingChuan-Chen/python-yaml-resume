@@ -55,62 +55,10 @@ educations:
     location: Tainan, TW
     gpa: 3.50
     date: 2008.09 2012.06
-skills:
-  - name: R
-    level: Master
-    description:
-      - Skilled at vectorizing programming and parallel programming.
-      - Mastering data.table for data manipulation in organizing billions of data.
-      - Good at massive data processing (100 billions of data) in MPI.
-      - Mastering lattice, ggplot2, plotly and shiny for data visualization.
-      - Model building for statistical models and machine learning.
-      - Linking with other programming languages (C/C++, Java) for improving performance.
-      - Package development for reusing code and team development.
-  - name: MatLab
-    level: Master
-    description:
-      - Skilled at vectorizing programming and parallel programming.
-      - Good at data manipulation and data visualization.
-      - Ability to link C++ for accelerating programs.
-  - name: SQL
-    level: Advanced
-    description: Familiar with Oracle SQL and MySQL SQL.
-  - name: Statistics
-    level: Advanced
-    description:
-      - Familiar with thoeries and good at explaining meaning for results.
-      - Skilled at hypothesis testing, statistical models, change point detection, clustering and dimension reduction.
-  - name: Machine Learning
-    level: High-Intermediate
-    description:
-      - Familiar with thoeries and using in real cases.
-      - Skilled at supervised learning.
-  - name: Python
-    level: High-Intermediate
-    description: Using Keras for the applications related to deep learning.
-  - name: Deep Learning
-    level: Intermediate
-    description: Using Keras for the application wrtten in Python.
-  - name: Shell Script
-    level: Intermediate
-    description: Building automated process and automated deployment of applications.
-  - name: Spark
-    level: Intermediate
-    description: Development of a loader for general usage moving data from Oracle to Hive with ETL.
-  - name: C++
-    level: Intermediate
-    description: Not so familiar with OOP, but good at using Armadillo and Eigen to accelerate program in R, MatLab.
-  - name: MongoDB
-    level: Elementary
-    description: Build a single node for ETC data storage.
-  - name: Scala
-    level: Elementary
-    description: Only used in one project and move development to Python after.
-  - name: Web (HTML, CSS, Javascript)
-    level: Elementary
-experience:
+experiences:
   - organization: Taiwan Semiconductor Manufacturing Company Limited
     department: CIM Department
+    location: Taichung, Taiwan
     position: Junior Engineer
     date: July 2016 - Present
     summary: Data engineer and data analyst on semiconductor manufacturing data.
@@ -133,8 +81,9 @@ experience:
       - Using statistical method to detect the shift of location or variance on the measurements.
   - organization: Academia Sinica
     department: Institute of Statistical Science
+    location: Taipei, Taiwan
     position: Research Assistant
-    date: September 2015 - June 2016.06
+    date: September 2015 - June 2016
     summary: Funcational data analysis of traffic data provided by Taiwan freeway bureau.
     highlights:
       - Automatically downloading open data from websites with R and parsing data in XML format for saving data to MongoDB.
@@ -195,6 +144,51 @@ awards:
       The whole analysis need to be done by R. The data is collected from a registering system created by Taiwan governmnet of the actual
       selling price of real estate. Our team chose to predict the price of house from a messy data. Each team had the times of a day to
       finish their report. We used half a day to clean data and visualize the data. Other half a day is used in modeling and writing report.
+skills:
+  - name: R
+    level: Master
+    highlights:
+      - Skilled at vectorizing programming and parallel programming.
+      - Mastering data.table for data manipulation in organizing billions of data.
+      - Good at massive data processing (100 billions of data) in MPI.
+      - Mastering lattice, ggplot2, plotly and shiny for data visualization.
+      - Model building for statistical models and machine learning.
+      - Linking with other programming languages (C/C++, Java) for improving performance.
+      - Package development for reusing code and team development.
+  - name: MatLab
+    level: Master
+    highlights:
+      - Skilled at vectorizing programming and parallel programming.
+      - Good at data manipulation and data visualization.
+      - Ability to link C++ for accelerating programs.
+  - name: SQL
+    level: Advanced
+    highlights:
+      - Familiar with Oracle SQL and MySQL SQL.
+  - name: Statistics
+    level: Advanced
+    highlights:
+      - Familiar with thoeries and good at explaining meaning for results.
+      - Skilled at hypothesis testing, statistical models, change point detection, clustering and dimension reduction.
+  - name: Machine Learning
+    level: High-Intermediate
+    highlights:
+      - Familiar with thoeries and using in real cases.
+      - Skilled at supervised learning.
+  - name: Python
+    level: High-Intermediate
+    highlights:
+      - Familiar with numpy and pandas.
+      - Familiar with 2 deep learning frameworks, Keras and mxnet.
+      - Familiar with PySpark.
+  - name: Shell Script
+    level: Intermediate
+    highlights:
+      - Building automated process and automated deployment of applications.
+  - name: C++
+    level: Intermediate
+    highlights:
+      - Not so familiar with OOP, but good at using Armadillo and Eigen to accelerate program in R, MatLab.
 references:
   - name: Ray-Bing Chen
     position: Professor
