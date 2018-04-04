@@ -36,7 +36,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 1050px;
-    height: 5100px;
+    height: 4650px;
     background-color: white;
 }
 
@@ -122,7 +122,6 @@ li {
   width: 80%;
   width: calc(100% - 55px);
   font-weight: 700;
-  opacity: 0.9;
 }
 
 .contact-item .title.only {
@@ -152,6 +151,10 @@ li {
   margin: 0;
   padding: 0;
   font-weight: 700;
+}
+
+.journal_detail {
+    color: #727272;
 }
 
 .skill {
@@ -258,10 +261,6 @@ li {
     padding: 0;
 }
 
-.journal .journal_detail {
-    opacity: 0.8;
-}
-
 #projects h3 {
     font-size: 1.0em;
     margin: 0;
@@ -302,7 +301,7 @@ h3.skill-item {
 }
 
 .job_org .date {
-    opacity: 0.7;
+    color: #727272;
     margin-bottom: 1px;
     font-weight: 500;
     font-size: 1em;
@@ -311,4 +310,8 @@ h3.skill-item {
 .job_detail h4 {
     font-size: 1em;
     font-weight: bold;
+}
+
+#projects div.panel-body {
+    padding-bottom: 0px;
 }

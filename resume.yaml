@@ -63,21 +63,15 @@ experiences:
     date: July 2016 - Present
     summary: Data engineer and data analyst on semiconductor manufacturing data.
     highlights:
-      - Construct a big data solution for wafer manufacturing data by myself. The wafer manufacturing data is complex and multifarious,
-        it contains the manufacturing history of wafer, measurements of production and control wafer and data collected from the detectors in tools.
-        Therefore, how to design the data schema to store data in a big data and the time cost to query data are difficult. I try some sql-on-hadoop
-        solutions to fit in our developing environment which uses SQL a lot. Finally, I use Apache Hive to store massive and messy data, and use
-        Apache Spark to synchronize Oracle database and Apache Hive.
-      - Build up R working environment, setup several Rstudio servers for developers, build up a mini-CRAN for those servers without network to get
-        R packages installed, packing common function as several R packages like auto-install ROracle, Oracle SQL automatic build-up, graphic
-        functions and Hive connector etc.
-      - Analyze the semiconductor manufacturing data like offline/inline measurement, tool sensors or yield related issues.
-      - Open R workshop to teach colleagues to use R more professionally and efficiently, introduct
-        new R packages, and use R to perform machine learning and data analysis.
-      - Construct R web service for other colleagues easily using R to generate graphs or perform machine learning without other knowledge.
-      - Construct local git server powered by GitLab CE for the management of code, project in department.
-      - Get 3rd place on the 1st TSMC Kaggle of classification of defect images by deep learning with our customized neural network.
-      - Identifies the bad tools or key process with statistical methods.
+      - Constructing a big data solution for analyzing manefacturing data. I used Apache Hive for data warehouse and
+        Apache Spark for data streaming from Oracle to Apache Hive.
+      - Building up a development and production enviroment for R.
+      - Collecting usually used R functions and packing to R packages. For example, function to connect Oracle, Apache
+        Hive and MongoDB, function of building SQL and often used graphical functions.
+      - Organizing R workshop to teach colleagues using R professionally and efficiently. Sometimes, I also introduce
+        new R packages and skills of performing machine learning and data analysis.
+      - Analyzing the semiconductor manufacturing data like offline/inline measurement, tool sensors or yield related issues.
+      - Building up an R web service for other colleagues easily using R to plot or perform machine learning.
       - Using statistical method to detect the shift of location or variance on the measurements.
   - organization: Academia Sinica
     department: Institute of Statistical Science
@@ -143,7 +137,7 @@ awards:
       A national competition in Taiwan. Its purpose is to let participants find their own topic in given data and try to explain by data.
       The whole analysis need to be done by R. The data is collected from a registering system created by Taiwan governmnet of the actual
       selling price of real estate. Our team chose to predict the price of house from a messy data. Each team had the times of a day to
-      finish their report. We used half a day to clean data and visualize the data. Other half a day is used in modeling and writing report.
+      finish their report.
 skills:
   - name: R
     level: Master
@@ -169,12 +163,14 @@ skills:
     level: Advanced
     highlights:
       - Familiar with thoeries and good at explaining meaning for results.
-      - Skilled at hypothesis testing, statistical models, change point detection, clustering and dimension reduction.
+      - Experienced in hypothesis testing, statistical models, change point detection, clustering and dimension reduction.
+      - Experienced in generalized linear models with/without mixed effect, generalized estimating equation and generalized additive model.
+      - Experienced in functional data analysis including functional PCA, functional regression and functional clustering
   - name: Machine Learning
     level: High-Intermediate
     highlights:
-      - Familiar with thoeries and using in real cases.
-      - Skilled at supervised learning.
+      - Experienced in supervised learning and unsupervised learning.
+      - Experienced in decision tree, random forest and gradient boosting decision tree.
   - name: Python
     level: High-Intermediate
     highlights:
