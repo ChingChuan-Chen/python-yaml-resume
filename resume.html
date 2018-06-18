@@ -133,7 +133,7 @@
       <!-- ABOUT -->
       <div class="box" id="about">
         <h2><i class="fa fa-user ico"></i> About</h2>
-        <p>My name is Jamal Chen and I am a data engineer and data analyst with 3+ years of experience in big data infrastructure, data preprocessing and modeling. I am an experienced R programmer in data preprocessing and modeling, also a experienced Linux maintainer in automated process and system service management. I am familiar with packaging codes and reusing for efficient and fast development of applications. Also, I can give insights from data and provides pricture for making decisions.</p>
+        <p>My name is Jamal Chen and I am a data engineer and data analyst with 3+ years of experience in big data infrastructure, data processing, data visualization and modeling. I am an experienced R programmer, also a experienced Linux maintainer and Python developer in automated process and system service management. I am a efficient developer by developing common packages to reuse codes and apply it for fast development. Also, I can give insights from data and provides picture for making decisions.</p>
       </div>
       <!-- WORK EXPERIENCE -->
       <div class="box" id="experiences">
@@ -148,13 +148,13 @@
           <p class="summary">Data engineer and data analyst on semiconductor manufacturing data.</p>
           <h4>Highlights</h4>
           <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Constructing a big data solution for analyzing manefacturing data. I used Apache Hive for data warehouse and Apache Spark for data streaming from Oracle to Apache Hive.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building up a development and production enviroment for R.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Collecting usually used R functions and packing to R packages. For example, function to connect Oracle, Apache Hive and MongoDB, function of building SQL and often used graphical functions.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Organizing R workshop to teach colleagues using R professionally and efficiently. Sometimes, I also introduce new R packages and skills of performing machine learning and data analysis.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Analyzing the semiconductor manufacturing data like offline/inline measurement, tool sensors or yield related issues.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building up an R web service for other colleagues easily using R to plot or perform machine learning.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Using statistical method to detect the shift of location or variance on the measurements.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Developing an algorithm of shift detection on the WAT control charts. Since the WAT control charts in our company is collected daily, so we can use the traditional algorithm shift detection on time series data to catch the changes. Therefore, we based the first and second moments to propose an efficient and effective statistical method to overcome this. Now it is used in factory to scan the millions of charts daily.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Constructing a big data solution for analyzing manufacturing data. We used Apache Hive for data warehouse and Apache Spark for data streaming from Oracle to Apache Hive. Since we usually use 90 days of data to catch the changes of control chart to early alarming the changing of process to avoid defects, this solution provides a great storage to store the billions of records of wafer history and values of control charts for fast retrieving data.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> With strong statistical sense, we apply the customized deep learning model on the defect judgement to achieve 91% accuracy rate which is close to the accuracy rate by human operatives.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Collecting usually-used R functions and packing to R packages. For example, function to connect Oracle, Apache Hive and MongoDB, function of building SQL and often-used graphical functions.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Organizing R workshops to teach colleagues using R more professionally and more efficiently. Sometimes, I also introduce new R packages and skills of performing machine learning and data analysis.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building up a development and production environment for R. Secure the RStudio servers by the reverse proxy techniques and set up a local R repository for servers without internet connection.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Using Java to develop a common library for Java, Scala, R and Python to use the department-standard encryption / decryption function to secure the sensitive data.</li>
           </ul>
         </div>
         <div class="job_org">
@@ -164,13 +164,12 @@
         </div>
         <div class="job_detail">
           <h3 class="job_title">Research Assistant, Institute of Statistical Science</h3>
-          <p class="summary">Funcational data analysis of traffic data provided by Taiwan freeway bureau.</p>
+          <p class="summary">Functional data analysis of traffic data provided by Taiwan freeway bureau.</p>
           <h4>Highlights</h4>
           <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Automatically downloading open data from websites with R and parsing data in XML format for saving data to MongoDB.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Constructing the statistical method with MatLab and R.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Preprocessing data and analyzing the relationship between flow, speed and occupancy rate.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building an interactive data visualization for the highway data with shiny in R.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Schedulely scrawling data from websites with R and summary XML-formatted data into MongoDB.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building an interactive data visualization for the highway data with shiny in R. The data source is MongoDB and it can display the javascript charts in time for hundreds of thousands of data.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Constructing the statistical models with MatLab and R. Mainly focus on clustering and regression methods on functional data (penal data). We had developed a statistical method to impute the missing value on functional data with competitive RMSE to the other statistical methods. This applies on the study of relationship between flow, speed and occupancy rate collected from Taiwan highways. Through building a functional PCA model, we can acquire a good estimation of  the covariance structure between three factors, and apply this to predict the future flow to avoid the traffic jam.</li>
           </ul>
         </div>
       </div>
@@ -240,7 +239,7 @@
             <div class="description pull-right">
               <h3>Competition for Data Analysis with R in Taiwan</h3>
               <p><i class="fa fa-trophy ico"></i>Honorable Mention</p>
-              <p>A national competition in Taiwan. Its purpose is to let participants find their own topic in given data and try to explain by data. The whole analysis need to be done by R. The data is collected from a registering system created by Taiwan governmnet of the actual selling price of real estate. Our team chose to predict the price of house from a messy data. Each team had the times of a day to finish their report.</p>
+              <p>A national competition in Taiwan. Its purpose is to let participants find their own topic in given data and try to explain by data. The whole analysis need to be done by R. The data is collected from a registering system created by Taiwan governmet of the actual selling price of real estate. Our team chose to predict the price of house from a messy data. Each team had the times of a day to finish their report.</p>
             </div>
           </li>
         </ul>
