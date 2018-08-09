@@ -19,9 +19,9 @@ contact:
   email: zw12356@gmail.com
   website: http://chingchuan-chen.github.io/
   location:
-    address: No.114, Guangfeng St., Pingzhen Dist.
-    postalCode: 32452
-    city: Taoyuan City
+    address: No.23, Aly. 150, Tianbao St., Xitun Dist.
+    postalCode: 407
+    city: Taichung City
     country: Taiwan
   profiles:
     - network: facebook
@@ -31,11 +31,12 @@ contact:
     - network: github
       url: github.com/ChingChuan-Chen
 about:
-  My name is Jamal Chen and I am a data engineer and data analyst with 3+ years of experience in big data infrastructure,
-  data processing, data visualization and modeling. I am an experienced R programmer, also a experienced Linux maintainer
-  and Python developer in automated process and system service management. I am a efficient developer by developing common
-  packages to reuse codes and apply it for fast development. Also, I can give insights from data and provides picture
-  for making decisions.
+  My name is Jamal Chen. I am a data engineer and data analyst with 3+ years of experience in big data infrastructure,
+  big data computation, data preprocessing, data visualization and modeling. I am an experienced R and MatLab programmer,
+  also a experienced Linux user. Also, I am familiar with Spark in Python and Scala. I have experiences on Oracle SQL,
+  Hive SQL and MongoDB. I am also familiar with SLURM and MPI. I can combine the multiple tools to develop a stable
+  and fast system to provide analyzed results from billions of data for users. Therefore, user can response for the
+  changing in processing in time and not to worry about that the data size crashes their computer and can not response in time.
 educations:
   - degree: Master
     area: Statistics
@@ -64,25 +65,14 @@ experiences:
     date: July 2016 - Present
     summary: Data engineer and data analyst on semiconductor manufacturing data.
     highlights:
-      - Developing an algorithm of shift detection on the WAT control charts. Since the WAT control charts in our
-        company is collected daily, so we can use the traditional algorithm shift detection on time series data
-        to catch the changes. Therefore, we based the first and second moments to propose an efficient and
-        effective statistical method to overcome this. Now it is used in factory to scan the millions of charts daily.
-      - Constructing a big data solution for analyzing manufacturing data. We used Apache Hive for data warehouse and
-        Apache Spark for data streaming from Oracle to Apache Hive. Since we usually use 90 days of data to catch the
-        changes of control chart to early alarming the changing of process to avoid defects, this solution provides a
-        great storage to store the billions of records of wafer history and values of control charts for fast
-        retrieving data.
-      - With strong statistical sense, we apply the customized deep learning model on the defect judgement to achieve
-        91% accuracy rate which is close to the accuracy rate by human operatives.
-      - Collecting usually-used R functions and packing to R packages. For example, function to connect Oracle,
-        Apache Hive and MongoDB, function of building SQL and often-used graphical functions.
-      - Organizing R workshops to teach colleagues using R more professionally and more efficiently. Sometimes,
-        I also introduce new R packages and skills of performing machine learning and data analysis.
-      - Building up a development and production environment for R. Secure the RStudio servers by the reverse
-        proxy techniques and set up a local R repository for servers without internet connection.
-      - Using Java to develop a common library for Java, Scala, R and Python to use the department-standard encryption /
-        decryption function to secure the sensitive data.
+      - Survey, construct and maintain the first big data solution for our department. Data storage is on Apache Hive and
+        Apache Spark is used in pulling data from Oracle.
+      - Develop a fast-responding correlation analyzing system to reveal the correlation between the thousands of
+        measurements by SLURM, MPI and MongoDB.
+      - Develop an algorithm to detect the mean shift and variance shift on WAT data for wafer processing.
+      - Using R to analyzing billions of wafer processing data to find the key factors of yields.
+        For example, to find the differences on the history of bad wafer and good wafer.
+      - Manage R infrastructure and package the frequently-used functions.
   - organization: Academia Sinica
     department: Institute of Statistical Science
     location: Taipei, Taiwan
@@ -90,15 +80,9 @@ experiences:
     date: September 2015 - June 2016
     summary: Functional data analysis of traffic data provided by Taiwan freeway bureau.
     highlights:
-      - Schedulely scrawling data from websites with R and summary XML-formatted data into MongoDB.
-      - Building an interactive data visualization for the highway data with shiny in R. The data source is MongoDB and
-        it can display the javascript charts in time for hundreds of thousands of data.
-      - Constructing the statistical models with MatLab and R. Mainly focus on clustering and regression methods on
-        functional data (penal data). We had developed a statistical method to impute the missing value on functional
-        data with competitive RMSE to the other statistical methods. This applies on the study of relationship between flow,
-        speed and occupancy rate collected from Taiwan highways. Through building a functional PCA model, we can acquire
-        a good estimation of  the covariance structure between three factors, and apply this to predict the future flow
-        to avoid the traffic jam.
+      - Schedulely scrawl data from websites with R and parse XML-formatted data into MongoDB.
+      - Build an interactive data visualization GUI by R shiny for the highway data.
+      - Construct the statistical models with MatLab and R. Focus on clustering and regression method for functional data.
 projects:
   - name: Automatically Generated Resume
     summary: A tool for automatically generated resume written in Python by YAML and Jinja2.
@@ -117,17 +101,15 @@ projects:
     highlights:
       - A first R package address the analysis of the multiple instance data.
       - This package provides a MLE with EM algorithm under the framework of logistic regression.
-      - Providing not only prediction, but also variable selection with L1 panalty.
+      - This package provides not only prediction, but also variable selection with L1 panalty.
       - The performance issues are addressed by using RcppArmadillo.
 languages:
   - language: Chinese
     fluency: Native speaker
   - language: English
     fluency: Conversant
-    certification: TOEIC 675 (2010)
   - language: Japanese
-    fluency: Basic Knowledge
-    certification: None
+    fluency: Conversant
 journals:
   - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee
     title: "milr: Multiple-Instance Logistic Regression with Lasso Penalty"
@@ -173,7 +155,7 @@ skills:
   - name: SQL
     level: Advanced
     highlights:
-      - Familiar with Oracle SQL and MySQL SQL.
+      - Familiar with Oracle SQL, MySQL SQL and Hive SQL.
   - name: Statistics
     level: Advanced
     highlights:
