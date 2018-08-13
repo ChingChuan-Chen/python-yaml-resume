@@ -189,57 +189,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         {% endfor %}
       </div>
       {% endif %}
-      <!-- PROJECTS -->
-      {% if projects is defined %}
-      <div class="box" id="projects">
-        <h2><i class="fa fa-tasks ico"></i> Projects</h2>
-        <div class="panel panel-default">
-          {% for project in projects %}
-          <div class="panel-heading">
-            <div class="name panel-title">{{ project.name }}</div>
-          </div>
-          <div class="panel-body">
-            {% if project.url is defined %}
-            <div class="url">
-              <a href="{{ project.url }}"><i class="fa fa-globe ico"></i> {{ project.url }}</a>
-            </div>
-            {% endif %}
-            {% if project.summary is defined %}
-            <p>{{ project.summary }}</p>
-            {% endif %}
-            {% if project.highlights is defined %}
-              <h3>Highlights</h3>
-              <ul class="list-group">
-              {% for highlight in project.highlights %}
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> {{ highlight }}</li>
-              {% endfor %}
-              </ul>
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endif %}
-      <!-- AWARDS -->
-      {% if awards is defined %}
-      <div class="box" id="awards">
-        <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-        <ul id="award_list" class="clearfix">
-          {% for award in awards %}
-          <li>
-            <div class="date pull-left">{{ award.date }}</div>
-            <div class="description pull-right">
-              <h3>{{ award.title }}</h3>
-              <p><i class="fa fa-trophy ico"></i>{{ award.awarder }}</p>
-              {% if award.description is defined %}
-              <p>{{ award.description }}</p>
-              {% endif %}
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
       <!-- JOURNALS -->
       {% if journals is defined %}
       <div class="box" id="journals">
@@ -267,6 +216,57 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <div class="website">
               <a href="{{ journal.website }}"><i class="fa fa-globe ico"></i> {{ journal.website }}</a>
             </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <!-- AWARDS -->
+      {% if awards is defined %}
+      <div class="box" id="awards">
+        <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+        <ul id="award_list" class="clearfix">
+          {% for award in awards %}
+          <li>
+            <div class="date pull-left">{{ award.date }}</div>
+            <div class="description pull-right">
+              <h3>{{ award.title }}</h3>
+              <p><i class="fa fa-trophy ico"></i>{{ award.awarder }}</p>
+              {% if award.description is defined %}
+              <p>{{ award.description }}</p>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <!-- PROJECTS -->
+      {% if projects is defined %}
+      <div class="box" id="projects">
+        <h2><i class="fa fa-tasks ico"></i> Projects</h2>
+        <div class="panel panel-default">
+          {% for project in projects %}
+          <div class="panel-heading">
+            <div class="name panel-title">{{ project.name }}</div>
+          </div>
+          <div class="panel-body">
+            {% if project.url is defined %}
+            <div class="url">
+              <a href="{{ project.url }}"><i class="fa fa-globe ico"></i> {{ project.url }}</a>
+            </div>
+            {% endif %}
+            {% if project.summary is defined %}
+            <p>{{ project.summary }}</p>
+            {% endif %}
+            {% if project.highlights is defined %}
+              <h3>Highlights</h3>
+              <ul class="list-group">
+              {% for highlight in project.highlights %}
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> {{ highlight }}</li>
+              {% endfor %}
+              </ul>
             {% endif %}
           </div>
           {% endfor %}

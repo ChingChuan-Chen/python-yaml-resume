@@ -68,7 +68,7 @@
               <h4>Advisor: </h4>
               <p>Ray-Bing Chen</p>
               <h4>Abstract: </h4>
-              <p>For imbalanced data, the density ratio estimation (Kanamori et al. (2009)) is good solution to solve it. However, the performance of density ratio is poor when data is sparse in the high dimension. Therefore, we propose using projection to perform dimension reduction. Our result shows that the proposed method is better than the original method.</p>
+              <p>For imbalanced data, the density ratio estimation (Kanamori et al. (2009)) is good solution to solve it. However, its performance shrink fast for sparse data. Therefore, we propose a projection method to perform the dimension reduction and make data more crowded to distinguish. Our result shows that the proposed method is better than the original method.</p>
               </p>
             </div>
           </li>
@@ -133,7 +133,7 @@
       <!-- ABOUT -->
       <div class="box" id="about">
         <h2><i class="fa fa-user ico"></i> About</h2>
-        <p>My name is Jamal Chen. I am a data engineer and data analyst with 3+ years of experience in big data infrastructure, big data computation, data preprocessing, data visualization and modeling. I am an experienced R and MatLab programmer, also a experienced Linux user. Also, I am familiar with Spark in Python and Scala. I have experiences on Oracle SQL, Hive SQL and MongoDB. I am also familiar with SLURM and MPI. I can combine the multiple tools to develop a stable and fast system to provide analyzed results from billions of data for users. Therefore, user can response for the changing in processing in time and not to worry about that the data size crashes their computer and can not response in time.</p>
+        <p>My name is Jamal Chen. I am a data engineer and data analyst with 3+ years of experience in big data infrastructure, big data computation, data preprocessing, data visualization and modeling. I am an experienced R and MatLab programmer, also a experienced Linux user. Also, I am familiar with Spark in Python and Scala. In some scenarios, I also write C++ for performance. Except for programming languages, I have experiences on manipulating databases like Oracle, Hive and MongoDB. As for high performance computing, I am good at SLURM and MPI. Most importantly, I have a Master degree in statistics, so this is different to other data engineers. I am capable of linear regression with or without penalties and know the details of theorem. Therefore, I can realize from scratch. I also know about some clustering methods like K-means, Gaussian mixture model. For machine learning, I also study decision tree, random forest and gradient boosting tree model and I can apply them to do prediction in R. To sum up, I am an engineer who is capable of infrastructure, big data computing tolls and statistics.</p>
       </div>
       <!-- WORK EXPERIENCE -->
       <div class="box" id="experiences">
@@ -145,14 +145,15 @@
         </div>
         <div class="job_detail">
           <h3 class="job_title">Junior Engineer, CIM Department</h3>
-          <p class="summary">Data engineer and data analyst on semiconductor manufacturing data.</p>
+          <p class="summary">Data engineer and data analyst in semiconductor manufacturing data.</p>
           <h4>Highlights</h4>
           <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Survey, construct and maintain the first big data solution for our department. Data storage is on Apache Hive and Apache Spark is used in pulling data from Oracle.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Develop a fast-responding correlation analyzing system to reveal the correlation between the thousands of measurements by SLURM, MPI and MongoDB.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Develop an algorithm to detect the mean shift and variance shift on WAT data for wafer processing.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Using R to analyzing billions of wafer processing data to find the key factors of yields. For example, to find the differences on the history of bad wafer and good wafer.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Manage R infrastructure and package the frequently-used functions.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> I am assigned to survey, construct and maintain the first big data solution for our department. I used Apache Hive as data storage and Apache Spark as a tool to pull data from Oracle.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> I developed an algorithm to detect the mean shift and variance shift on final WAT data. I also developed a fast computing procedure to get results in 1 hour for 100 million data via Hive and HDFS.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> I used R to analyze billions of wafer-processing data to identify the key factors of yields. For example, I used gradient boosting tree model to find out the differences of history between bad wafers and good wafers by.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> My collegue and me developed a correlation system to reveal the correlation between the thousands of measurements in time by SLURM, MPI and MongoDB. In this system, I took robust correlation instead of Pearson's one because there are many strange outliers which we cannot simply rule out in our data.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> My collegue and me got the third place in a TSMC defect detection competition. My collegue and me customized a neural network model with two inputs. This model is based on Xception and Swish.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> I manage infrastructure of R which based on CentOS 7 and responsible for writing packages including the frequently-used functions.</li>
           </ul>
         </div>
         <div class="job_org">
@@ -165,11 +166,55 @@
           <p class="summary">Functional data analysis of traffic data provided by Taiwan freeway bureau.</p>
           <h4>Highlights</h4>
           <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Schedulely scrawl data from websites with R and parse XML-formatted data into MongoDB.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Build an interactive data visualization GUI by R shiny for the highway data.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Construct the statistical models with MatLab and R. Focus on clustering and regression method for functional data.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> My main task is to improve the clustering and regression methods for functional data. It is based on functional principal component analysis.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> I wrote an R program to schedulely scrawl data from websites with R and parse XML to store into MongoDB.</li>
+              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> I used R shiny to build an interactive data visualization GUI for the highway data. It showes the daily traffic situation.</li>
           </ul>
         </div>
+      </div>
+      <!-- JOURNALS -->
+      <div class="box" id="journals">
+        <h2><i class="fa fa-book ico"></i> Journals</h2>
+        <div class="journal panel panel-default">
+          <div class="panel-heading">
+            <div class="name panel-title">milr: Multiple-Instance Logistic Regression with Lasso Penalty</div>
+          </div>
+          <div class="panel-body">
+            <div class="authors">Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee</div>
+            <div class="journal_detail">
+              <i>The R Journal</i> (2017)
+              9
+              :1
+              , pages 446-457
+.
+            </div>
+            <div class="website">
+              <a href="https://journal.r-project.org/archive/2017/RJ-2017-013/index.html"><i class="fa fa-globe ico"></i> https://journal.r-project.org/archive/2017/RJ-2017-013/index.html</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- AWARDS -->
+      <div class="box" id="awards">
+        <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+        <ul id="award_list" class="clearfix">
+          <li>
+            <div class="date pull-left">December 2017</div>
+            <div class="description pull-right">
+              <h3>TSMC Kaggle Competition for the Defect Recognition</h3>
+              <p><i class="fa fa-trophy ico"></i>Third Place</p>
+              <p>A internal competition inside TSMC. The competition is to classify 4 types of defects from defect and referenced images. The score is accuracy rate on non-opened testing images. Our team used home-made neural network with 2 inputs for defect and referenced images, the model is based on Xception and Swish.</p>
+            </div>
+          </li>
+          <li>
+            <div class="date pull-left">August 2014</div>
+            <div class="description pull-right">
+              <h3>Competition for Data Analysis with R in Taiwan</h3>
+              <p><i class="fa fa-trophy ico"></i>Honorable Mention</p>
+              <p>A national competition for university and master students in Taiwan. Its purpose is to let participants find their own topic on a given dataset and try to explain their topic by data. The whole analysis was limited to use R. The data is collected from a registering system created by Taiwan governmet, the system contains the actual selling prices of real estate. Our team chose to predict the price of house from a messy data.</p>
+            </div>
+          </li>
+        </ul>
       </div>
       <!-- PROJECTS -->
       <div class="box" id="projects">
@@ -185,8 +230,8 @@
             <p>A tool for automatically generated resume written in Python by YAML and Jinja2.</p>
               <h3>Highlights</h3>
               <ul class="list-group">
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Easily maintain resume by modifying the YAML file.</li>
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Simply changing Jinja template for different themes.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Easily maintained resume by modifying the YAML file.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> Themes are easily changed by using different Jinja templates.</li>
               </ul>
           </div>
           <div class="panel-heading">
@@ -212,142 +257,15 @@
             <p>This package performs maximum likelihood estimation for multiple-instance logistic regression utilizing EM algorithm with LASSO penalty.</p>
               <h3>Highlights</h3>
               <ul class="list-group">
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> A first R package address the analysis of the multiple instance data.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> It is a first R package addressing the analysis of the multiple instance data.</li>
                 <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> This package provides a MLE with EM algorithm under the framework of logistic regression.</li>
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> This package provides not only prediction, but also variable selection with L1 panalty.</li>
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> The performance issues are addressed by using RcppArmadillo.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> This package provides not only prediction, but also variable selection with L1 penalty.</li>
+                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> The performance issues are solved by RcppArmadillo.</li>
               </ul>
           </div>
         </div>
       </div>
-      <!-- AWARDS -->
-      <div class="box" id="awards">
-        <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-        <ul id="award_list" class="clearfix">
-          <li>
-            <div class="date pull-left">December 2017</div>
-            <div class="description pull-right">
-              <h3>TSMC Kaggle Competition for the Defect Recognition</h3>
-              <p><i class="fa fa-trophy ico"></i>Third Place</p>
-              <p>A internal competition in TSMC. Its purpose is to make classification of defects able to judge automatically by machine for lessening human cost. They provides 3000 pictures of 4 types of defects and let employees fit a deep learning model to classify. Then send the model to the platform for get the accuracy rate of testing set (1200 pictures.).</p>
-            </div>
-          </li>
-          <li>
-            <div class="date pull-left">August 2014</div>
-            <div class="description pull-right">
-              <h3>Competition for Data Analysis with R in Taiwan</h3>
-              <p><i class="fa fa-trophy ico"></i>Honorable Mention</p>
-              <p>A national competition in Taiwan. Its purpose is to let participants find their own topic in given data and try to explain by data. The whole analysis need to be done by R. The data is collected from a registering system created by Taiwan governmet of the actual selling price of real estate. Our team chose to predict the price of house from a messy data. Each team had the times of a day to finish their report.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- JOURNALS -->
-      <div class="box" id="journals">
-        <h2><i class="fa fa-book ico"></i> Journals</h2>
-        <div class="journal panel panel-default">
-          <div class="panel-heading">
-            <div class="name panel-title">milr: Multiple-Instance Logistic Regression with Lasso Penalty</div>
-          </div>
-          <div class="panel-body">
-            <div class="authors">Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee</div>
-            <div class="journal_detail">
-              <i>The R Journal</i> (2017)
-              9
-              :1
-              , pages 446-457
-.
-            </div>
-            <div class="website">
-              <a href="https://journal.r-project.org/archive/2017/RJ-2017-013/index.html"><i class="fa fa-globe ico"></i> https://journal.r-project.org/archive/2017/RJ-2017-013/index.html</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- SKILLS -->
-      <div class="box" id="skills">
-        <h2><i class="fa fa-wrench ico"></i> Skills</h2>
-        <ul class="list-group">
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">R
-              <span class="skill badge pull-right">Master</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Skilled at vectorizing programming and parallel programming.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Mastering data.table for data manipulation in organizing billions of data.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Good at massive data processing (100 billions of data) in MPI.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Mastering lattice, ggplot2, plotly and shiny for data visualization.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Model building for statistical models and machine learning.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Linking with other programming languages (C/C++, Java) for improving performance.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Package development for reusing code and team development.</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">MatLab
-              <span class="skill badge pull-right">Master</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Skilled at vectorizing programming and parallel programming.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Good at data manipulation and data visualization.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Ability to link C++ for accelerating programs.</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">SQL
-              <span class="skill badge pull-right">Advanced</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with Oracle SQL, MySQL SQL and Hive SQL.</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">Statistics
-              <span class="skill badge pull-right">Advanced</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with thoeries and good at explaining meaning for results.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Experienced in hypothesis testing, statistical models, change point detection, clustering and dimension reduction.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Experienced in generalized linear models with/without mixed effect, generalized estimating equation and generalized additive model.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Experienced in functional data analysis including functional PCA, functional regression and functional clustering</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">Machine Learning
-              <span class="skill badge pull-right">High-Intermediate</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Experienced in supervised learning and unsupervised learning.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Experienced in decision tree, random forest and gradient boosting decision tree.</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">Python
-              <span class="skill badge pull-right">High-Intermediate</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with numpy and pandas.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with 2 deep learning frameworks, Keras and mxnet.</li>
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Familiar with PySpark.</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">Shell Script
-              <span class="skill badge pull-right">Intermediate</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Building automated process and automated deployment of applications.</li>
-          </ul>
-          </li>
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">C++
-              <span class="skill badge pull-right">Intermediate</span>
-            </h3>
-          <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> Not so familiar with OOP, but good at using Armadillo and Eigen to accelerate program in R, MatLab.</li>
-          </ul>
-          </li>
-        </ul>
-      </div>
       </div>
     </div>
   </body>
