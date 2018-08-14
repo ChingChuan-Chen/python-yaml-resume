@@ -75,10 +75,10 @@ experiences:
         I also developed a fast computing procedure to get results in 1 hour for 100 million data via Hive and HDFS.
       - I used R to analyze billions of wafer-processing data to identify the key factors of yields.
         For example, I used gradient boosting tree model to find out the differences of history between bad wafers and good wafers by.
-      - My collegue and me developed a correlation system to reveal the correlation between the thousands of measurements in time
+      - My colleague and me developed a correlation system to reveal the correlation between the thousands of measurements in time
         by SLURM, MPI and MongoDB. In this system, I took robust correlation instead of Pearson's one because there are
         many strange outliers which we cannot simply rule out in our data.
-      - My collegue and me got the third place in a TSMC defect detection competition. My collegue and me customized a neural network model with
+      - My colleague and me got the third place in a TSMC defect detection competition. My colleague and me customized a neural network model with
         two inputs. This model is based on Xception and Swish.
       - I manage infrastructure of R which based on CentOS 7 and responsible for writing packages including the frequently-used functions.
   - organization: Academia Sinica
