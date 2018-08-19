@@ -101,21 +101,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <div class="date pull-left">{{ degree.date }}</div>
             <div class="description pull-right">
               <h3>{{ degree.university }}, {{ degree.location }}</h3>
-              <p><i class="fa fa-graduation-cap ico"></i>{{ degree.degree }}</p>
+              <p><i class="fa fa-graduation-cap ico"></i>{{ degree.degree }} of {{ degree.area }}</p>
               {% if degree.gpa is defined %}
               <p>GPA: {{ degree.gpa }}</p>
               {% endif %}
               {% if degree.thesis is defined %}
               <h4>Thesis: </h4>
               <p>{{ degree.thesis }}</p>
-              {% endif %}
-              {% if degree.advisor is defined %}
-              <h4>Advisor: </h4>
-              <p>{{ degree.advisor }}</p>
-              {% endif %}
-              {% if degree.abstract is defined %}
-              <h4>Abstract: </h4>
-              <p>{{ degree.abstract }}</p>
               {% endif %}
               </p>
             </div>
@@ -133,6 +125,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           <li class="list-group-item">
           <i class="fa fa-chevron-circle-right ico"></i> {{ language.language }}
           <span class="skill badge pull-right">{{ language.fluency }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <!-- SKILLS -->
+      {% if skills is defined %}
+      <div class="box" id="skills">
+        <h2><i class="fa fa-wrench ico"></i> Skills</h2>
+        <ul class="list-group">
+          {% for skill in skills %}
+          <li class="list-group-item"></i>
+            <h3 class="skill-item">{{ skill.name }}
+              <span class="skill badge pull-right">{{ skill.level }}</span>
+            </h3>
           </li>
           {% endfor %}
         </ul>
@@ -157,11 +164,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
       <!-- Main Penal -->
       <div id="main">
-      <!-- ABOUT -->
-      {% if about is defined %}
-      <div class="box" id="about">
-        <h2><i class="fa fa-user ico"></i> About</h2>
-        <p>{{ about }}</p>
+      <!-- SUMMARY -->
+      {% if summary is defined %}
+      <div class="box" id="summary">
+        <h2><i class="fa fa-user ico"></i> Summary</h2>
+        <div id="summary_detail">
+        <p>{{ summary.description }}</p>
+        {% if summary.highlights is defined %}
+          <p>I am also ... </p>
+          <ul class="list-group" id="summary_hl">
+          {% for highlight in summary.highlights %}
+            <li class="list-group-item"><i class="fa fa-check-square ico"></i> {{ highlight }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+        </div>
       </div>
       {% endif %}
       <!-- WORK EXPERIENCE -->
@@ -170,13 +187,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <h2><i class="fa fa-suitcase ico"></i> Work Experiences</h2>
         {% for experience in experiences %}
         <div class="job_org">
-          <h3>{{ experience.organization }}</h3>
-          <p class="location">{{ experience.location }}</p>
+          <h3>{{ experience.organization }}, {{ experience.location }}</h3>
           <p class="date">{{ experience.date }}</p>
         </div>
         <div class="job_detail">
           <h3 class="job_title">{{ experience.position }}, {{ experience.department }}</h3>
-          <p class="summary">{{ experience.summary }}</p>
+          <p class="target" style="font-weight: 400;">{{ experience.target }}</p>
           {% if experience.highlights is defined %}
           <h4>Highlights</h4>
           <ul class="list-group">
@@ -271,28 +287,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           </div>
           {% endfor %}
         </div>
-      </div>
-      {% endif %}
-      <!-- SKILLS -->
-      {% if skills is defined %}
-      <div class="box" id="skills">
-        <h2><i class="fa fa-wrench ico"></i> Skills</h2>
-        <ul class="list-group">
-          {% for skill in skills %}
-          <li class="list-group-item"></i>
-            <h3 class="skill-item">{{ skill.name }}
-              <span class="skill badge pull-right">{{ skill.level }}</span>
-            </h3>
-          {% if skill.highlights is defined %}
-          <ul class="list-group">
-            {% for highlight in skill.highlights %}
-              <li class="list-group-item"><i class="fa fa-check-circle ico"></i> {{ highlight }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
       </div>
       {% endif %}
       </div>

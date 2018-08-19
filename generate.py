@@ -49,5 +49,6 @@ if __name__ == '__main__':
   tempFolder = "C:\\Users\\Jamal\\AppData\\Local\\Temp"
   
   copyfile(data["conf"]["css"], tempFolder + "\\" + os.path.basename(data["conf"]["css"]))
-  copyfile(data["info"]["picture"], tempFolder + "\\" + data["info"]["picture"])
+  if "picture" in data["info"].keys():
+    copyfile(data["info"]["picture"], tempFolder + "\\" + data["info"]["picture"])
   pdfkit.from_string(html_output, data["conf"]["pdf"], options=options)

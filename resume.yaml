@@ -8,118 +8,86 @@ info:
   name: Jamal Ching-Chuan Chen
   alias: 陳慶全
   tags:
-    - Data Engineer
-    - Data Analyst
-    - R
-  picture: selfie.JPG
+    - Data Scientist
 contact:
   phone:
     - (private) +886-966-676-326
     - (work) +886-963-855-707
   email: zw12356@gmail.com
   website: http://chingchuan-chen.github.io/
-  location:
-    address: No.23, Aly. 150, Tianbao St., Xitun Dist.
-    postalCode: 407
-    city: Taichung City
-    country: Taiwan
   profiles:
-    - network: facebook
-      url: www.facebook.com/celestial0230
     - network: linkedin
       url: www.linkedin.com/in/celestial0230
     - network: github
       url: github.com/ChingChuan-Chen
-about:
-  My name is Jamal Chen. I am a data engineer and data analyst with 3+ years of experience in big data infrastructure,
-  big data computation, data preprocessing, data visualization and modeling. I am an experienced R and MatLab programmer,
-  also a experienced Linux user. Also, I am familiar with Spark in Python and Scala. In some scenarios, I also write C++
-  for performance. Except for programming languages, I have experiences on manipulating databases like Oracle, Hive and MongoDB.
-  As for high performance computing, I am good at SLURM and MPI. Most importantly, I have a Master degree in statistics,
-  so this is different to other data engineers. I am capable of linear regression with or without penalties and know the
-  details of theorem. Therefore, I can realize from scratch. I also know about some clustering methods like K-means,
-  Gaussian mixture model. For machine learning, I also study decision tree, random forest and gradient boosting tree model
-  and I can apply them to do prediction in R. To sum up, I am an engineer who is capable of infrastructure,
-  big data computing tolls and statistics.
+summary:
+  description: I am Jamal. I work as data scientist in a in multinational enterprise of wafer manyfacturing.
+  highlights:
+    - A system developer with domain knowledge and strong technical skills.
+    - A machine learner acquainted with different algorithms to solve real problems.
+    - A skilled engineer in big data computing, data preprocessing and data visualization.
+    - A programmer skilled with R, Python, Shell, MatLab, Scala, SQL and C++.
+    - A statistician worked deeply with theoretical or applied statistical methods.
 educations:
   - degree: Master
     area: Statistics
     university: National Cheng Kung University
     location: Tainan, TW
-    gpa: 4.00
+    gpa: 4.0 / 4.0
     date: 2012.09 2014.09
     thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection
-    advisor: Ray-Bing Chen
-    abstract:
-      For imbalanced data, the density ratio estimation (Kanamori et al. (2009)) is good solution
-      to solve it. However, its performance shrink fast for sparse data. Therefore, we propose a
-      projection method to perform the dimension reduction and make data more crowded to distinguish.
-      Our result shows that the proposed method is better than the original method.
   - degree: Bachelor
     area: Economics and Statistics (Double major)
     university: National Cheng Kung University
     location: Tainan, TW
-    gpa: 3.50
+    gpa: 3.5 / 4.0
     date: 2008.09 2012.06
 experiences:
   - organization: Taiwan Semiconductor Manufacturing Company Limited
     department: CIM Department
     location: Taichung, Taiwan
-    position: Junior Engineer
+    position: Data Scientist
     date: July 2016 - Present
-    summary: Data engineer and data analyst in semiconductor manufacturing data.
+    target: Develop automation systems on quality control of wafer processing from a big volume of data (3 billions per day).
     highlights:
-      - I am assigned to survey, construct and maintain the first big data solution for our department. I used Apache Hive as data storage and
-        Apache Spark as a tool to pull data from Oracle.
-      - I developed an algorithm to detect the mean shift and variance shift on final WAT data.
-        I also developed a fast computing procedure to get results in 1 hour for 100 million data via Hive and HDFS.
-      - I used R to analyze billions of wafer-processing data to identify the key factors of yields.
-        For example, I used gradient boosting tree model to find out the differences of history between bad wafers and good wafers by.
-      - My colleague and me developed a correlation system to reveal the correlation between the thousands of measurements in time
-        by SLURM, MPI and MongoDB. In this system, I took robust correlation instead of Pearson's one because there are
-        many strange outliers which we cannot simply rule out in our data.
-      - My colleague and me got the third place in a TSMC defect detection competition. My colleague and me customized a neural network model with
-        two inputs. This model is based on Xception and Swish.
-      - I manage infrastructure of R which based on CentOS 7 and responsible for writing packages including the frequently-used functions.
+      - Construct a developer-friendly environment for developing R and Python behind firewall.
+      - Introduce the GitLab solution to our department.
+      - Build up a big data solutiion for our department.
+      - Introduce a system for reviewing the relationships between measurements.
+      - Develop an algorithm of process changing detection which suits for final WAT data.
+      - Introduce a system to quickly yield analyze from data collecting to screening out key factors.
+      - Develop an algorithm to identify the defects on the wafer via a neural network model.
   - organization: Academia Sinica
     department: Institute of Statistical Science
     location: Taipei, Taiwan
     position: Research Assistant
     date: September 2015 - June 2016
-    summary: Functional data analysis of traffic data provided by Taiwan freeway bureau.
+    target: Complete at least one research on functional data analysis.
     highlights:
-      - My main task is to improve the clustering and regression methods for functional data.
-        It is based on functional principal component analysis.
-      - I wrote an R program to schedulely scrawl data from websites with R and parse XML to store into MongoDB.
-      - I used R shiny to build an interactive data visualization GUI for the highway data.
-        It showes the daily traffic situation.
-projects:
-  - name: Automatically Generated Resume
-    summary: A tool for automatically generated resume written in Python by YAML and Jinja2.
-    url: https://github.com/ChingChuan-Chen/python-yaml-resume
-    highlights:
-      - Easily maintained resume by modifying the YAML file.
-      - Themes are easily changed by using different Jinja templates.
-  - name: R package RcppBlaze
-    summary: Blaze is an open-source, high-performance C++ math library for dense and sparse arithmetic. This package provides the header files for linking Blaze library in Rcpp.
-    url: https://github.com/ChingChuan-Chen/RcppBlaze
-    highlights:
-      - Full API from R to Blaze under the RcppArmadillo-like framework.
-  - name: R package milr
-    summary: This package performs maximum likelihood estimation for multiple-instance logistic regression utilizing EM algorithm with LASSO penalty.
-    url: https://github.com/PingYangChen/milr
-    highlights:
-      - It is a first R package addressing the analysis of the multiple instance data.
-      - This package provides a MLE with EM algorithm under the framework of logistic regression.
-      - This package provides not only prediction, but also variable selection with L1 penalty.
-      - The performance issues are solved by RcppArmadillo.
+      - Construct a procedure to digest daily data from Taiwan freeway bureau.
+      - Use functional clustering and functional regression to impute the missing values.
+      - Build up a interactive visaulization system to view the flow, occupancy rate and speed data.
+      - Use functional clustering and functional regression to predict daily flows, occupancy rate and speed data.
+skills:
+  - name: R / MatLab
+    level: Master
+  - name: Statistics
+    level: Advanced
+  - name: Machine Learning
+    level: Advanced
+  - name: SQL / Python
+    level: High-Intermediate
+  - name: Bash / C++ / Scala
+    level: Intermediate
+  - name: C# / Java / JavaScript
+    level: Basic
 languages:
   - language: Chinese
     fluency: Native speaker
   - language: English
-    fluency: Conversant
+    fluency: Fluent
   - language: Japanese
-    fluency: Conversant
+    fluency: Intermediate
 journals:
   - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee
     title: "milr: Multiple-Instance Logistic Regression with Lasso Penalty"
@@ -133,31 +101,10 @@ awards:
   - title: TSMC Kaggle Competition for the Defect Recognition
     date: December 2017
     awarder: Third Place
-    description:
-      A internal competition inside TSMC. The competition is to classify 4 types of defects from defect and referenced images.
-      The score is accuracy rate on non-opened testing images. Our team used home-made neural network with 2 inputs for defect
-      and referenced images, the model is based on Xception and Swish.
   - title: Competition for Data Analysis with R in Taiwan
     date: August 2014
     awarder: Honorable Mention
-    description:
-      A national competition for university and master students in Taiwan. Its purpose is to let participants find their own
-      topic on a given dataset and try to explain their topic by data. The whole analysis was limited to use R.
-      The data is collected from a registering system created by Taiwan governmet, the system contains the actual selling
-      prices of real estate. Our team chose to predict the price of house from a messy data.
 references:
-  - name: Ray-Bing Chen
-    position: Professor
-    department: Department of Statistics
-    organization: National Cheng Kung University
-    phone: +886-6-275-7575 ext. 53645
-    email: rbchen@mail.ncku.edu.tw
-  - name: Sheng-Mao Chang
-    position: Associate Professor
-    department: Department of Statistics
-    organization: National Cheng Kung University
-    phone: +886-6-275-7575 ext. 53632
-    email: smchang@mail.ncku.edu.tw
   - name: Jeng-Min Chiou
     position: Research Fellow
     department: Institute of Statistical Science

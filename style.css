@@ -9,10 +9,12 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     color: #363636;
+	line-height: 1.0;
 }
 
 h1, h2, h3, h4, h5 {
-    margin-top: 10px;
+    margin-top: 3px;
+	margin-bottom: 3px;
     font-weight: 500;
 }
 
@@ -36,7 +38,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 1050px;
-    height: 4160px;
+    height: 1380px;
     background-color: white;
 }
 
@@ -90,13 +92,13 @@ li {
 }
 
 .box{
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .box h2 {
   color: #6495ed;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -138,10 +140,10 @@ li {
   width: 75%;
   display: inline-block;
   background: #eee;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   margin-left: 12%;
   position: relative;
-  padding: 10px;
+  padding: 3px;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
@@ -162,10 +164,10 @@ li {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
-    padding: 5px 10px;
+    padding: 3px 7px;
     background: #32475c;
     position: relative;
-    font-size: .85em;
+    font-size: .75em;
 }
 
 #references div p {
@@ -173,7 +175,7 @@ li {
 }
 
 #award_list, #education_list {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 0;
     position: relative;
     padding: 1em 0;
@@ -268,6 +270,29 @@ li {
     font-weight: 700;
 }
 
+#summary_detail {
+	margin-left: 3%;
+	margin-bottom: 0px;
+}
+
+#summary_hl p {
+	margin: 0 0 5px;
+}
+
+#summary_hl {
+	margin-bottom: 6px;
+}
+
+ul#summary_hl {
+    -webkit-margin-before: 0;
+}
+
+#summary_hl .list-group-item {
+	margin-left: 1%;
+	padding: 3px 2px;
+	border: 0px;
+}
+
 h3.skill-item {
     color: #637cd3;
     font-size: 1.3em;
@@ -314,4 +339,12 @@ h3.skill-item {
 
 #projects div.panel-body {
     padding-bottom: 0px;
+}
+
+.list-group {
+	margin-bottom: 10px;
+}
+
+.list-group-item {
+    padding: 7px 10px;
 }
