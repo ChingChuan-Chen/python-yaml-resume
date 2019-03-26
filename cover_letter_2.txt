@@ -1,0 +1,16 @@
+Dear Hiring Manager:
+
+I'm writing to express my interest in the 【Data Pipeline Engineer/Data Scientist】 position listed on LinkedIn.com. With a Bachelor’s degree in Economics and Statistics and Master’s degree in Statistics. I have some experiences in R, Python, MatLab, Scala and C++. I am capable of developing efficient, well-designed applications of data visualization and machine learning. I am confident that I will be an asset to your organization.
+
+I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new programming languages and development techniques are important to me and the success of your organization.
+
+In my current role as data scientist for Taiwan Semiconductor Manufacturing Company, I have 5 achievements. First, I am the first one who construct a big data solution for our department. Second, I introduced a fast-responding system for process improvement which is based on MongoDB. Third, I represented my department to participate a deep learning competition and won a third place. Fourth, I developed an algorithm to detect the processing changes. Last, I introduced a procedure to quickly analyze CP data from scratch.
+
+I believe I have the capabilities and experiences for the role of 【Data Pipeline Engineer/Data Scientist】 and will contribute positively to the growth of 【Microsoft】. I have enclosed my full resume that details my relevant skills and work experiences. Thank you for taking the time to consider my application. I look forward to meet you to discuss my suitability further.
+
+Thank you for your consideration.
+
+Jamal Chingchuan Chen 陳慶全
+Phone (work): +886-963-855-707 (weekday 9-18)
+Phone (private): +886-966-676-326 (weekday night or weekend)
+e-mail: zw12356@gmail.com

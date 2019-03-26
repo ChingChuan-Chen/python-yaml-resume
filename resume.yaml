@@ -6,13 +6,13 @@ conf:
   pdf: resume.pdf
 info:
   name: Jamal Ching-Chuan Chen
-  alias: 陳慶全
+  # alias: 陳慶全
   tags:
     - Data Scientist
+    - Data Engineer
 contact:
   phone:
-    - (private) +886-966-676-326
-    - (work) +886-963-855-707
+    - +886-966-676-326
   email: zw12356@gmail.com
   website: http://chingchuan-chen.github.io/
   profiles:
@@ -21,73 +21,139 @@ contact:
     - network: github
       url: github.com/ChingChuan-Chen
 summary:
-  description: I am Jamal. I work as data scientist in a in multinational enterprise of wafer manyfacturing.
+  description:
+    I am a data scientist and sometimes work as data engineer.
+    About personality, I would say I am enthusiastic.
+    I enjoy helping people to solve the difficulties they encountered.
   highlights:
-    - A system developer with domain knowledge and strong technical skills.
-    - A machine learner acquainted with different algorithms to solve real problems.
-    - A skilled engineer in big data computing, data preprocessing and data visualization.
-    - A programmer skilled with R, Python, Shell, MatLab, Scala, SQL and C++.
-    - A statistician worked deeply with theoretical or applied statistical methods.
+    - A person enjoying solving problems and sharing knowledge with people.
+    - A statistician worked deeply with data visualization, statistical methodologies and statistical learnings.
+    - A engineer with creativity, critical observation and leadership.
+    - A experienced programmer skilled with R, Python, Shell, MATLAB, Scala and SQL.
+    - A skilled data engineer in data streaming / ETL, distributed computing and distributed database.
 educations:
   - degree: Master
     area: Statistics
     university: National Cheng Kung University
     location: Tainan, TW
     gpa: 4.0 / 4.0
-    date: 2012.09 2014.09
+    date: 09-2012 09-2014
     thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection
+    abstract:
+      To overcome the curse of dimensionality on density ratio estimation, we propose a methodology to
+      perform dimension reduction. With several real dataset, our results show that the proposed
+      method is better than the ones without dimension reduction.
   - degree: Bachelor
     area: Economics and Statistics (Double major)
     university: National Cheng Kung University
     location: Tainan, TW
     gpa: 3.5 / 4.0
-    date: 2008.09 2012.06
+    date: 09-2008 06-2012
 experiences:
-  - organization: Taiwan Semiconductor Manufacturing Company Limited
-    department: CIM Department
-    location: Taichung, Taiwan
-    position: Data Scientist
-    date: July 2016 - Present
-    target: Develop automation systems on quality control of wafer processing from a big volume of data (3 billions per day).
-    highlights:
-      - Construct a developer-friendly environment for developing R and Python behind firewall.
-      - Introduce the GitLab solution to our department.
-      - Build up a big data solutiion for our department.
-      - Introduce a system for reviewing the relationships between measurements.
-      - Develop an algorithm of process changing detection which suits for final WAT data.
-      - Introduce a system to quickly yield analyze from data collecting to screening out key factors.
-      - Develop an algorithm to identify the defects on the wafer via a neural network model.
-  - organization: Academia Sinica
-    department: Institute of Statistical Science
+  - organization: Trend Micro Inc.
     location: Taipei, Taiwan
-    position: Research Assistant
-    date: September 2015 - June 2016
-    target: Complete at least one research on functional data analysis.
-    highlights:
-      - Construct a procedure to digest daily data from Taiwan freeway bureau.
-      - Use functional clustering and functional regression to impute the missing values.
-      - Build up a interactive visaulization system to view the flow, occupancy rate and speed data.
-      - Use functional clustering and functional regression to predict daily flows, occupancy rate and speed data.
+    positions:
+      - position: Senior Data Scientist
+        period: 01-2019 - Present
+        department: Consumer
+    target: Along with a group of data engineers and domain experts, develop an IPS on network flows via statistical learning.
+    projects:
+      - project: Network behavior analysis
+        role: data scientist
+        achievements:
+          - According to device, summarize the network flows to profile device behaviors.
+          - Define a good score and threshold for device profiling with statistical sense.
+  - organization: Taiwan Semiconductor Manufacturing Company
+    location: Taichung, Taiwan
+    positions:
+      - position: Senior Data Scientist / Engineer
+        period: 09-2018 - 01-2019
+        department: CIM Department
+      - position: Data Scientist / Engineer
+        period: 07-2016 - 08-2018
+        department: CIM Department
+    target: Develop automation systems on quality control during wafer processing from a big volume of data (3 billions per day).
+    projects:
+      - project: WAT chart change detection
+        role: data engineer / data scientist
+        achievements:
+          - WAT is wafer acceptance test which is examined when finishing the process of a wafer.
+          - Common changing point analysis cannot be used in these data because there is no detailed orders in data. It only contains date information.
+          - I propose a algorithm to detect the daily changes based on statistics.
+          - It is effective to detect the changes between upper control limit and lower control limit.
+      - project: control chart change detection performance improvement
+        role: data engineer
+        achievements:
+          - It originally use Hadoop MapReduce to split data into csv stored in chart level, then implement R on each chart.
+          - I propose to use MPI to accelerate the implementation time. I reduce the implementation time from 8 hours to 40 minutes.
+          - The first key to reduce time is an algorithm to distribute the jobs with different running time which depends on data size.
+          - The second key is to use MPI without memory limit instead YARN container with only 1GB memory.
+            (Note that because we cannot change the memory size of YARN container.)
+      - project: Build up a development environment for data scientist
+        role: data engineer
+        achievements:
+          - Rely on Docker technology, we can provide a consistent and centralized controled development environment for data scientist.
+          - I write a customized RStudio server Dockerfile to ensure everyone get the same environment.
+      - project: Data pipeline for processing history data and measurements data
+        role: organizer / data engineer
+        achievements:
+          - Done by Spark written in Scala and Python. (UDAF is written in Scala.)
+          - Good design on job and provide multiple configurations for users.
+          - Well monitoring for job implementation and data quality.
+      - project: Propose, validate and construct a big data solution
+        role: organizer / data engineer
+        achievements:
+          - For the messy data query requirement for data analysts, I tested several SQL-on-hadoop solutions to test.
+          - Cassandra is unable to get data by different primary key.
+          - It spend too much time on query for Drill.
+          - Hive on Tez is chosen as our final solution.
+  - organization: Academia Sinica
+    location: Taipei, Taiwan
+    positions:
+      - position: Research Assistant
+        period: 09-2015 - 06-2016
+        department: Institute of Statistical Science
+    target: Complete at least one research in the field of functional data analysis.
+    projects:
+      - project: Imputation of functional data
+        role: data scientist
+        achievements:
+          - Use functional clustering to impute missing values in traffic data with lower RMSE than other methods.
+      - project: Create a data streaming for researches (data from Taiwan freeway bureau)
+        role: organizer / data engineer
+        achievements:
+          - Build a data pipeline to transform crawled data from XML to JSON and store them into a MongoDB.
+          - Develop a platform to view the data with d3.js via R shiny.
+      - project: Travel Time Estimation
+        role: data scientist
+        achievements:
+          - Study journals about travel time estimation.
+          - Realize the algorithms in journals and summarize the pros and cons.
+      - project: Organize and refactor the source codes of previous researches
+        role: organizer
+        achievements:
+          - Study the previous researches and learn how FPCA works.
+          - Remove several redundant blocks and improve performance of key functions.
 skills:
   - name: R / MatLab
     level: Master
   - name: Statistics
     level: Advanced
-  - name: Machine Learning
+  - name: Statistical Learning
     level: Advanced
   - name: SQL / Python
     level: High-Intermediate
-  - name: Bash / C++ / Scala
+  - name: LaTeX / Bash
     level: Intermediate
-  - name: C# / Java / JavaScript
+  - name: C++ / C#
     level: Basic
 languages:
   - language: Chinese
     fluency: Native speaker
   - language: English
-    fluency: Fluent
+    fluency: Advanced
   - language: Japanese
-    fluency: Intermediate
+    fluency: Intermediate (JLPT N3)
 journals:
   - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee
     title: "milr: Multiple-Instance Logistic Regression with Lasso Penalty"
@@ -99,15 +165,29 @@ journals:
     website: https://journal.r-project.org/archive/2017/RJ-2017-013/index.html
 awards:
   - title: TSMC Kaggle Competition for the Defect Recognition
-    date: December 2017
+    date: 12-2017
     awarder: Third Place
+    description:
+      A internal competition in TSMC. There are over 100 teams to assist wafer factory decrease labor cost on the categorization of defects.
+      There are only 3000 defect/reference images provided. The goal is do our best to get high accuracy rate on testing set (1200 images.).
+      I used a 6-layer convolution nerual network with two Xception modules and win third place in 91.2% accuracy rate.
   - title: Competition for Data Analysis with R in Taiwan
-    date: August 2014
+    date: 08-2014
     awarder: Honorable Mention
+    description:
+      A national competition in Taiwan. There are over 30 teams to do a brainstorming on the data from a system to register the actual selling price of real estate.
+      Each team have one day to come out a topic, and apply R language to complete and demostrate the results.
+      Our team chose to predict the price of house from the messy data via LASSO approach.
 references:
   - name: Jeng-Min Chiou
     position: Research Fellow
     department: Institute of Statistical Science
     organization: Academia Sinica
-    phone: +886-2-2783-5611 ext 312
+    phone: +886-2-2783-5611 ext. 312
     email: jmchiou@stat.sinica.edu.tw
+  - name: Sheng-Mao Chang
+    position: Associate Professor
+    department: Department of Statistics
+    organization: National Cheng Kung University
+    phone: +886-6-275-7575 ext. 53632
+    email: smchang@mail.ncku.edu.tw
