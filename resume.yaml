@@ -5,7 +5,7 @@ conf:
   html: resume.html
   pdf: resume.pdf
 info:
-  name: Jamal Ching-Chuan Chen
+  name: Ching-Chuan (Jamal) Chen
   # alias: 陳慶全
   tags:
     - Data Scientist
@@ -23,14 +23,14 @@ contact:
 summary:
   description:
     I am a data scientist and sometimes work as data engineer.
-    About personality, I would say I am enthusiastic.
+    I would say I am enthusiastic, dedicated and analytic.
     I enjoy helping people to solve the difficulties they encountered.
   highlights:
-    - A person enjoying solving problems and sharing knowledge with people.
-    - A statistician worked deeply with data visualization, statistical methodologies and statistical learnings.
-    - A engineer with creativity, critical observation and leadership.
-    - A experienced programmer skilled with R, Python, Shell, MATLAB, Scala and SQL.
-    - A skilled data engineer in data streaming / ETL, distributed computing and distributed database.
+    - a person enjoying sharing knowledge with people.
+    - a statistician works deeply with data visualization, statistical methodologies and statistical learnings.
+    - a engineer with creativity, critical observation and leadership.
+    - a experienced programmer skilled at R, Python, Shell, MATLAB, Scala and SQL.
+    - a skilled data engineer in data streaming / ETL, distributed computing and distributed database.
 educations:
   - degree: Master
     area: Statistics
@@ -61,8 +61,8 @@ experiences:
       - project: Network behavior analysis
         role: data scientist
         achievements:
-          - According to device, summarize the network flows to profile device behaviors.
-          - Define a good score and threshold for device profiling with statistical sense.
+          - According to device, summarized the network flows to profile device behaviors.
+          - Defined a good score and threshold for device profiling with statistical sense.
   - organization: Taiwan Semiconductor Manufacturing Company
     location: Taichung, Taiwan
     positions:
@@ -77,36 +77,37 @@ experiences:
       - project: WAT chart change detection
         role: data engineer / data scientist
         achievements:
-          - WAT is wafer acceptance test which is examined when finishing the process of a wafer.
-          - Common changing point analysis cannot be used in these data because there is no detailed orders in data. It only contains date information.
-          - I propose a algorithm to detect the daily changes based on statistics.
-          - It is effective to detect the changes between upper control limit and lower control limit.
-      - project: control chart change detection performance improvement
+          - WAT is wafer acceptance test which is examined while finishing the process of a wafer.
+            There is no detailed orders in data. It only contains date information.
+          - Proposed an algorithm to detect the daily changes based on statistics.
+            It is effective to detect the changes between upper control limit and lower control limit.
+          - Parallelly processed 3 billions records of data and output results of detections in 2 hours.
+            It is done by R language and MPI.
+      - project: Control chart change detection performance improvement
         role: data engineer
         achievements:
-          - It originally use Hadoop MapReduce to split data into csv stored in chart level, then implement R on each chart.
-          - I propose to use MPI to accelerate the implementation time. I reduce the implementation time from 8 hours to 40 minutes.
-          - The first key to reduce time is an algorithm to distribute the jobs with different running time which depends on data size.
-          - The second key is to use MPI without memory limit instead YARN container with only 1GB memory.
-            (Note that because we cannot change the memory size of YARN container.)
-      - project: Build up a development environment for data scientist
+          - Proposed a new architecture powered by MPI to improve speed of detection algorithm.
+          - Reduced the implementation time from 8 hours to 40 minutes in the new architecture.
+          - Proposed an algorithm to dispatch the detection jobs with different running time which depends on data size.
+      - project: Build up a development environment for the data scientists
         role: data engineer
         achievements:
-          - Rely on Docker technology, we can provide a consistent and centralized controled development environment for data scientist.
-          - I write a customized RStudio server Dockerfile to ensure everyone get the same environment.
+          - Construct a consistent and centralized controled development environment for data scientist.
+          - Writed a customized RStudio server Dockerfile to ensure everyone get the same environment.
       - project: Data pipeline for processing history data and measurements data
         role: organizer / data engineer
         achievements:
-          - Done by Spark written in Scala and Python. (UDAF is written in Scala.)
-          - Good design on job and provide multiple configurations for users.
+          - Propose a fast and reliable data pipeline powered by Spark in Scala and Python.
+            (UDAF is written in Scala.)
+          - Any new ETL can be set flexibly and easily for users. This UI is done by R shiny.
           - Well monitoring for job implementation and data quality.
+          - Stored 6 billions data into Hive with full automation and good data quality.
       - project: Propose, validate and construct a big data solution
         role: organizer / data engineer
         achievements:
-          - For the messy data query requirement for data analysts, I tested several SQL-on-hadoop solutions to test.
-          - Cassandra is unable to get data by different primary key.
-          - It spend too much time on query for Drill.
-          - Hive on Tez is chosen as our final solution.
+          - For the messy data query requirement for data analysts, I tested several solutions with SQL-like query language to test.
+          - Tested several big data solution like Cassandra, Drill and Hive.
+          - Made number of machine learning jobs can be done in 20 times shorter computing time than Oracle database.
   - organization: Academia Sinica
     location: Taipei, Taiwan
     positions:
@@ -118,22 +119,22 @@ experiences:
       - project: Imputation of functional data
         role: data scientist
         achievements:
-          - Use functional clustering to impute missing values in traffic data with lower RMSE than other methods.
+          - Used functional clustering to impute missing values in traffic data with lower RMSE than other methods.
       - project: Create a data streaming for researches (data from Taiwan freeway bureau)
         role: organizer / data engineer
         achievements:
-          - Build a data pipeline to transform crawled data from XML to JSON and store them into a MongoDB.
-          - Develop a platform to view the data with d3.js via R shiny.
+          - Built a data pipeline to transform crawled data from XML to JSON and store them into a MongoDB.
+          - Developed a platform to view the data with d3.js via R shiny.
       - project: Travel Time Estimation
         role: data scientist
         achievements:
-          - Study journals about travel time estimation.
-          - Realize the algorithms in journals and summarize the pros and cons.
+          - Studied journals about travel time estimation.
+          - Realized the algorithms in journals and summarize the pros and cons.
       - project: Organize and refactor the source codes of previous researches
         role: organizer
         achievements:
-          - Study the previous researches and learn how FPCA works.
-          - Remove several redundant blocks and improve performance of key functions.
+          - Studied the previous researches and learn how FPCA works.
+          - Removed several redundant blocks and improve performance of key functions.
 skills:
   - name: R / MatLab
     level: Master
@@ -168,15 +169,15 @@ awards:
     date: 12-2017
     awarder: Third Place
     description:
-      A internal competition in TSMC. There are over 100 teams to assist wafer factory decrease labor cost on the categorization of defects.
+      An internal competition in TSMC. There are over 100 teams to assist wafer factory decrease cost on the categorization of defects.
       There are only 3000 defect/reference images provided. The goal is do our best to get high accuracy rate on testing set (1200 images.).
-      I used a 6-layer convolution nerual network with two Xception modules and win third place in 91.2% accuracy rate.
+      I used a 6-layer convolution neural network with two Xception modules and win third place in 91.2% accuracy rate.
   - title: Competition for Data Analysis with R in Taiwan
     date: 08-2014
-    awarder: Honorable Mention
+    awarder: Honourable Mention
     description:
       A national competition in Taiwan. There are over 30 teams to do a brainstorming on the data from a system to register the actual selling price of real estate.
-      Each team have one day to come out a topic, and apply R language to complete and demostrate the results.
+      Each team have one day to come out a topic and apply R language to complete and demonstrate the results.
       Our team chose to predict the price of house from the messy data via LASSO approach.
 references:
   - name: Jeng-Min Chiou

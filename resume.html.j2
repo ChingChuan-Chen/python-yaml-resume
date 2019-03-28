@@ -188,39 +188,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </ul>
       </div>
       {% endif %}
-      <!-- WORK EXPERIENCE -->
-      {% if experiences is defined %}
-      <div class="box" id="experiences">
-        <h2><i class="fa fa-suitcase ico"></i> Work Experiences</h2>
-        {% for experience in experiences %}
-        <div class="job_org">
-          <h3>{{ experience.organization }}, {{ experience.location }}</h3>
-          {% for position in experience.positions %}
-              <p class="date">{{ position.position }}, {{ position.department }}, {{ position.period }}</p>
-          {% endfor %}
-        </div>
-        <div class="job_detail">
-          <h4>Objective</h4>
-          <p class="target" style="font-weight: 400;">{{ experience.target }}</p>
-          {% if experience.projects is defined %}
-          <h4>Projects</h4>
-          <ol type="1">
-            {% for project in experience.projects %}
-              <li>{{ project.project }} / {{ project.role }}</li>
-              {% if experience.projects is defined %}
-                 <ul class="list-group" type="1">
-                 {% for achievement in project.achievements %}
-                    <li class="list-group-item achievement"><i class="fa fa-star ico"></i>{{ achievement }}</li>
-                 {% endfor %}
-                 </ul>
-              {% endif %}
-            {% endfor %}
-          </ol>
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
       <!-- JOURNALS -->
       {% if journals is defined %}
       <div class="box" id="journals">
@@ -254,6 +221,39 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </div>
       </div>
       {% endif %}
+      <!-- WORK EXPERIENCE -->
+      {% if experiences is defined %}
+      <div class="box" id="experiences">
+        <h2><i class="fa fa-suitcase ico"></i> Work Experiences</h2>
+        {% for experience in experiences %}
+        <div class="job_org">
+          <h3>{{ experience.organization }}, {{ experience.location }}</h3>
+          {% for position in experience.positions %}
+              <p class="date">{{ position.position }}, {{ position.department }}, {{ position.period }}</p>
+          {% endfor %}
+        </div>
+        <div class="job_detail">
+          <h4>Objective</h4>
+          <p class="target" style="font-weight: 400;">{{ experience.target }}</p>
+          {% if experience.projects is defined %}
+          <h4>Projects</h4>
+          <ol type="1">
+            {% for project in experience.projects %}
+              <li>{{ project.project }} / {{ project.role }}</li>
+              {% if experience.projects is defined %}
+                 <ul class="list-group" type="1">
+                 {% for achievement in project.achievements %}
+                    <li class="list-group-item achievement"><i class="fa fa-star ico"></i>{{ achievement }}</li>
+                 {% endfor %}
+                 </ul>
+              {% endif %}
+            {% endfor %}
+          </ol>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
       <!-- AWARDS -->
       {% if awards is defined %}
       <div class="box" id="awards">
@@ -272,37 +272,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           </li>
           {% endfor %}
         </ul>
-      </div>
-      {% endif %}
-      <!-- PROJECTS -->
-      {% if projects is defined %}
-      <div class="box" id="projects">
-        <h2><i class="fa fa-tasks ico"></i> Projects</h2>
-        <div class="panel panel-default">
-          {% for project in projects %}
-          <div class="panel-heading">
-            <div class="name panel-title">{{ project.name }}</div>
-          </div>
-          <div class="panel-body">
-            {% if project.url is defined %}
-            <div class="url">
-              <a href="{{ project.url }}"><i class="fa fa-globe ico"></i> {{ project.url }}</a>
-            </div>
-            {% endif %}
-            {% if project.summary is defined %}
-            <p>{{ project.summary }}</p>
-            {% endif %}
-            {% if project.highlights is defined %}
-              <h3>Highlights</h3>
-              <ul class="list-group">
-              {% for highlight in project.highlights %}
-                <li class="list-group-item"><i class="fa fa-chevron-circle-right ico"></i> {{ highlight }}</li>
-              {% endfor %}
-              </ul>
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
       </div>
       {% endif %}
       </div>
