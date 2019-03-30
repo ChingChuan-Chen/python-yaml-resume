@@ -11,10 +11,9 @@ info:
     - Data Scientist
     - Data Engineer
 contact:
-  phone:
-    - +886-966-676-326
+  phone: +886-966-676-326
   email: zw12356@gmail.com
-  website: http://chingchuan-chen.github.io/
+  website: chingchuan-chen.github.io/
   profiles:
     - network: linkedin
       url: www.linkedin.com/in/celestial0230
@@ -22,15 +21,14 @@ contact:
       url: github.com/ChingChuan-Chen
 summary:
   description:
-    I am a data scientist and sometimes work as data engineer.
-    I would say I am enthusiastic, dedicated and analytic.
-    I enjoy helping people to solve the difficulties they encountered.
+    I’m currently working as a senior data scientist in Trend Micro which is a global well-known cyber security company.
+    I am capable of developing efficient, well-designed applications of machine learning,
+    statistical methodologies and data visualization.
   highlights:
-    - a person enjoying sharing knowledge with people.
-    - a statistician works deeply with data visualization, statistical methodologies and statistical learnings.
-    - a engineer with creativity, critical observation and leadership.
-    - a experienced programmer skilled at R, Python, Shell, MATLAB, Scala and SQL.
-    - a skilled data engineer in data streaming / ETL, distributed computing and distributed database.
+    - a statistician who developed several systems to detect the significant changes in the wafer manufacturing processes.
+    - a skilled distributed computing engineer who is also experienced in distributed database who built a system to process 6 billion data per day.
+    - an experienced programmer skilled at R, Python, Shell, MATLAB, Scala and SQL.
+    - a machine learning expert who winned a third place in an internal competition over 100 teams.
 educations:
   - degree: Master
     area: Statistics
@@ -56,13 +54,6 @@ experiences:
       - position: Senior Data Scientist
         period: 01-2019 - Present
         department: Consumer
-    target: Along with a group of data engineers and domain experts, develop an IPS on network flows via statistical learning.
-    projects:
-      - project: Network behavior analysis
-        role: data scientist
-        achievements:
-          - According to device, summarized the network flows to profile device behaviors.
-          - Defined a good score and threshold for device profiling with statistical sense.
   - organization: Taiwan Semiconductor Manufacturing Company
     location: Taichung, Taiwan
     positions:
@@ -72,7 +63,7 @@ experiences:
       - position: Data Scientist / Engineer
         period: 07-2016 - 08-2018
         department: CIM Department
-    target: Develop automation systems on quality control during wafer processing from a big volume of data (3 billions per day).
+    target: Develop several systems of quality control on wafer manufacturing based on the data with high volume and complexity.
     projects:
       - project: WAT chart change detection
         role: data engineer / data scientist
@@ -135,6 +126,12 @@ experiences:
         achievements:
           - Studied the previous researches and learn how FPCA works.
           - Removed several redundant blocks and improve performance of key functions.
+  - organization: Ministry of National Defense
+    location: Taichung, Taiwan
+    positions:
+      - position: Alternative military service
+        period: 10-2014 - 09-2015
+        department: National Immigration Agency
 skills:
   - name: R / MatLab
     level: Master

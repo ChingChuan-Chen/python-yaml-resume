@@ -9,7 +9,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     color: #363636;
-	line-height: 1.0;
+    line-height: 1.0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -38,7 +38,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 1050px;
-    height: 3000px;
+    height: 2850px;
     background-color: white;
 }
 
@@ -56,6 +56,10 @@ li {
     margin-left: 360px;
     min-height: 100%;
     padding: 20px;
+}
+
+#footer {
+    text-align: center;
 }
 
 #id {

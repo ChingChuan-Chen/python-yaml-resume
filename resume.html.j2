@@ -51,12 +51,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       </div>
       {% endif %}
 
+      {% if contact.website is defined %}
+      <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+        <div class="title only pull-right"></span><a href="https://{{ contact.website }}">{{ contact.website }}</a></div>
+      </div>
+      {% endif %}
+
       {% if contact.phone is defined %}
       <div class="contact-item">
         <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-        {% for phone in contact.phone %}
-          <div class="title {% if contact.phone|length == 1 %} only {% endif %} pull-right">{{ phone }}</div>
-        {% endfor %}
+        <div class="title only pull-right">{{ contact.phone }}</div>
       </div>
       {% endif %}
 
@@ -145,79 +150,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="summary_detail">
         <p>{{ summary.description }}</p>
         {% if summary.highlights is defined %}
-          <p>I am also ... </p>
+          <p>I'm also ... </p>
           <ul class="list-group" id="summary_hl">
           {% for highlight in summary.highlights %}
             <li class="list-group-item"><i class="fa fa-check-square ico"></i> {{ highlight }}</li>
           {% endfor %}
           </ul>
         {% endif %}
-        </div>
-      </div>
-      {% endif %}
-      <!-- EDUCATION -->
-      {% if educations is defined %}
-      <div class="box" id="educations">
-        <h2><i class="fa fa-certificate ico"></i> Education</h2>
-        <ul id="education_list" class="clearfix">
-          {% for degree in educations %}
-          <li>
-            <div class="date pull-left">{{ degree.date }}</div>
-            <div class="description pull-right">
-              <h3>{{ degree.university }}, {{ degree.location }}</h3>
-              <p><i class="fa fa-graduation-cap ico"></i>{{ degree.degree }} of {{ degree.area }}</p>
-              {% if degree.gpa is defined %}
-              <p>GPA: {{ degree.gpa }}</p>
-              {% endif %}
-              {% if degree.thesis is defined %}
-              <h4>Thesis: </h4>
-              <p>{{ degree.thesis }}</p>
-              {% endif %}
-              {% if degree.advisor is defined %}
-              <h4>Advisor: </h4>
-              <p>{{ degree.advisor }}</p>
-              {% endif %}
-              {% if degree.abstract is defined %}
-              <h4>Abstract: </h4>
-              <p>{{ degree.abstract }}</p>
-              {% endif %}
-              </p>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-      <!-- JOURNALS -->
-      {% if journals is defined %}
-      <div class="box" id="journals">
-        <h2><i class="fa fa-book ico"></i> Journals</h2>
-        <div class="journal panel panel-default">
-          {% for journal in journals %}
-          <div class="panel-heading">
-            <div class="name panel-title">{{ journal.title }}</div>
-          </div>
-          <div class="panel-body">
-            <div class="authors">{{ journal.authors }}</div>
-            <div class="journal_detail">
-              <i>{{ journal.journal }}</i> ({{ journal.date }})
-              {% if journal.volume is defined %}
-              {{ journal.volume }}
-              {% endif %}
-              {% if journal.number is defined %}
-              :{{ journal.number }}
-              {% endif %}
-              {% if journal.page is defined %}
-              , pages {{ journal.page }}
-              {% endif %}.
-            </div>
-            {% if journal.website is defined %}
-            <div class="website">
-              <a href="{{ journal.website }}"><i class="fa fa-globe ico"></i> {{ journal.website }}</a>
-            </div>
-            {% endif %}
-          </div>
-          {% endfor %}
         </div>
       </div>
       {% endif %}
@@ -233,8 +172,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
           {% endfor %}
         </div>
         <div class="job_detail">
+          {% if experience.target is defined %}
           <h4>Objective</h4>
           <p class="target" style="font-weight: 400;">{{ experience.target }}</p>
+          {% endif %}
           {% if experience.projects is defined %}
           <h4>Projects</h4>
           <ol type="1">
@@ -274,7 +215,78 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </ul>
       </div>
       {% endif %}
+      <!-- JOURNALS -->
+      {% if journals is defined %}
+      <div class="box" id="journals">
+        <h2><i class="fa fa-book ico"></i> Journals</h2>
+        <div class="journal panel panel-default">
+          {% for journal in journals %}
+          <div class="panel-heading">
+            <div class="name panel-title">{{ journal.title }}</div>
+          </div>
+          <div class="panel-body">
+            <div class="authors">{{ journal.authors }}</div>
+            <div class="journal_detail">
+              <i>{{ journal.journal }}</i> ({{ journal.date }})
+              {% if journal.volume is defined %}
+              {{ journal.volume }}
+              {% endif %}
+              {% if journal.number is defined %}
+              :{{ journal.number }}
+              {% endif %}
+              {% if journal.page is defined %}
+              , pages {{ journal.page }}
+              {% endif %}.
+            </div>
+            {% if journal.website is defined %}
+            <div class="website">
+              <a href="{{ journal.website }}"><i class="fa fa-globe ico"></i> {{ journal.website }}</a>
+            </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <!-- EDUCATION -->
+      {% if educations is defined %}
+      <div class="box" id="educations">
+        <h2><i class="fa fa-certificate ico"></i> Education</h2>
+        <ul id="education_list" class="clearfix">
+          {% for degree in educations %}
+          <li>
+            <div class="date pull-left">{{ degree.date }}</div>
+            <div class="description pull-right">
+              <h3>{{ degree.university }}, {{ degree.location }}</h3>
+              <p><i class="fa fa-graduation-cap ico"></i>{{ degree.degree }} of {{ degree.area }}</p>
+              {% if degree.gpa is defined %}
+              <p>GPA: {{ degree.gpa }}</p>
+              {% endif %}
+              {% if degree.thesis is defined %}
+              <h4>Thesis: </h4>
+              <p>{{ degree.thesis }}</p>
+              {% endif %}
+              {% if degree.advisor is defined %}
+              <h4>Advisor: </h4>
+              <p>{{ degree.advisor }}</p>
+              {% endif %}
+              {% if degree.abstract is defined %}
+              <h4>Abstract: </h4>
+              <p>{{ degree.abstract }}</p>
+              {% endif %}
+              </p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
       </div>
     </div>
+  <div id="footer">
+    <p>{{ info.name }}, <span class="fa fa-globe fa-fw"></span><a href="https://{{ contact.website }}">{{ contact.website }}</a></p>
+    <p><span class="fa fa-phone fa-fw"></span>{{ contact.phone }}, <span class="fa fa-envelope fa-fw"></span>{{ contact.email }}</p>
+    <p>&copy; Copyright 2019 <a href="https://github.com/ChingChuan-Chen/python-yaml-resume">python-yaml-resume</a> developed by Ching-Chuan Chen</p>
+  </div>
   </body>
 </html>
