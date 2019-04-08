@@ -21,14 +21,14 @@ contact:
       url: github.com/ChingChuan-Chen
 summary:
   description:
-    I’m currently working as a senior data scientist in Trend Micro which is a global well-known cyber security company.
+    I am currently working as a senior data scientist in Trend Micro which is a global well-known cybersecurity company.
     I am capable of developing efficient, well-designed applications of machine learning,
-    statistical methodologies and data visualization.
+    statistical methodologies, and data visualization.
   highlights:
     - a statistician who developed several systems to detect the significant changes in the wafer manufacturing processes.
-    - a skilled distributed computing engineer who is also experienced in distributed database who built a system to process 6 billion data per day.
-    - an experienced programmer skilled at R, Python, Shell, MATLAB, Scala and SQL.
-    - a machine learning expert who winned a third place in an internal competition over 100 teams.
+    - a skilled distributed computing engineer who has experience in the distributed database who built a system to process 6 billion data per day.
+    - an experienced programmer skilled at R, Python, Shell, MATLAB, Scala, and SQL.
+    - a machine learning expert who won third place in an internal competition over 100 teams.
 educations:
   - degree: Master
     area: Statistics
@@ -39,8 +39,8 @@ educations:
     thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection
     abstract:
       To overcome the curse of dimensionality on density ratio estimation, we propose a methodology to
-      perform dimension reduction. With several real dataset, our results show that the proposed
-      method is better than the ones without dimension reduction.
+      perform dimension reduction. With several real datasets, our results show that the proposed
+      a method is better than the ones without dimension reduction.
   - degree: Bachelor
     area: Economics and Statistics (Double major)
     university: National Cheng Kung University
@@ -68,36 +68,49 @@ experiences:
       - project: WAT chart change detection
         role: data engineer / data scientist
         achievements:
-          - WAT is wafer acceptance test which is examined while finishing the process of a wafer.
-            There is no detailed orders in data. It only contains date information.
+          - WAT is wafer acceptance test which is tested while finishing the process of a wafer.
+            There are no detailed orders in data. It only contains date information.
           - Proposed an algorithm to detect the daily changes based on statistics.
-            It is effective to detect the changes between upper control limit and lower control limit.
-          - Parallelly processed 3 billions records of data and output results of detections in 2 hours.
-            It is done by R language and MPI.
-      - project: Control chart change detection performance improvement
+            It is useful to detect the changes between upper control limit and lower control limit.
+          - Parallelly processed 3 billions of records of data and output results of detections in 2 hours.
+            It is done by the R language and the MPI.
+      - project: Find out the key factors making wafer low yield
+        role: data scientist
+        achievements:
+          - Engage the statistical hypotheses to compare the yields of wafer produced by the different equipment.
+      - project: Performance improvement of control chart change detection
         role: data engineer
         achievements:
-          - Proposed a new architecture powered by MPI to improve speed of detection algorithm.
+          - Proposed a new architecture powered by MPI to improve the speed of detection algorithm.
           - Reduced the implementation time from 8 hours to 40 minutes in the new architecture.
           - Proposed an algorithm to dispatch the detection jobs with different running time which depends on data size.
+      - project: Reduce the rate of out-of-control quality measurements in the process
+        role: data scientist
+        achievements:
+          - Through the correlations, dig out the key factors to raise the rate of out-of-control.
+          - Use a robust correlation coefficient estimation with robust variance estimations to avoid the influential points.
       - project: Build up a development environment for the data scientists
         role: data engineer
         achievements:
-          - Construct a consistent and centralized controled development environment for data scientist.
-          - Writed a customized RStudio server Dockerfile to ensure everyone get the same environment.
-      - project: Data pipeline for processing history data and measurements data
+          - Construct a consistent and centralized controlled development environment for the data scientists.
+          - Write a customized RStudio server Dockerfile to ensure everyone gets the same environment.
+      - project: Propose a methodology to recognize the relationships of quality measurements for the advanced process control
+        role: data scientist
+        achievements:
+          - Propose a methodology to estimate the effects of variables via a regression model.
+      - project: Data pipeline for processing history data and quality measurements data
         role: organizer / data engineer
         achievements:
           - Propose a fast and reliable data pipeline powered by Spark in Scala and Python.
             (UDAF is written in Scala.)
-          - Any new ETL can be set flexibly and easily for users. This UI is done by R shiny.
-          - Well monitoring for job implementation and data quality.
-          - Stored 6 billions data into Hive with full automation and good data quality.
+          - Any new ETL can be set flexible and easy for users. This UI is done via R shiny.
+          - Good monitoring for job implementation and data quality.
+          - Stored 6 billions of records of data into Hive with full automation and good data quality.
       - project: Propose, validate and construct a big data solution
         role: organizer / data engineer
         achievements:
           - For the messy data query requirement for data analysts, I tested several solutions with SQL-like query language to test.
-          - Tested several big data solution like Cassandra, Drill and Hive.
+          - Tested several big data solutions like Cassandra, Drill, and Hive.
           - Made number of machine learning jobs can be done in 20 times shorter computing time than Oracle database.
   - organization: Academia Sinica
     location: Taipei, Taiwan
@@ -105,27 +118,27 @@ experiences:
       - position: Research Assistant
         period: 09-2015 - 06-2016
         department: Institute of Statistical Science
-    target: Complete at least one research in the field of functional data analysis.
+    target: Develop the methodologies based on functional PCA applied to transportation.
     projects:
       - project: Imputation of functional data
         role: data scientist
         achievements:
-          - Used functional clustering to impute missing values in traffic data with lower RMSE than other methods.
+          - Use functional clustering to impute missing values in traffic data with lower RMSE than other methods.
       - project: Create a data streaming for researches (data from Taiwan freeway bureau)
         role: organizer / data engineer
         achievements:
-          - Built a data pipeline to transform crawled data from XML to JSON and store them into a MongoDB.
-          - Developed a platform to view the data with d3.js via R shiny.
+          - Build a data pipeline to transform crawled data from XML to JSON and store them into a MongoDB.
+          - Develop a platform to view the data with d3.js via R shiny.
       - project: Travel Time Estimation
         role: data scientist
         achievements:
-          - Studied journals about travel time estimation.
-          - Realized the algorithms in journals and summarize the pros and cons.
+          - Study journals about travel time estimation.
+          - Realize the algorithms in journals and summarize the pros and cons.
       - project: Organize and refactor the source codes of previous researches
         role: organizer
         achievements:
-          - Studied the previous researches and learn how FPCA works.
-          - Removed several redundant blocks and improve performance of key functions.
+          - Study the previous researches and learn how FPCA works.
+          - Remove several redundant blocks and improve the performance of critical functions.
   - organization: Ministry of National Defense
     location: Taichung, Taiwan
     positions:
@@ -153,7 +166,7 @@ languages:
   - language: Japanese
     fluency: Intermediate (JLPT N3)
 journals:
-  - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang and Kuo-Jung Lee
+  - authors: Ping-Yang Chen, Ching-Chuan Chen, Chun-Hao Yang, Sheng-Mao Chang, and Kuo-Jung Lee
     title: "milr: Multiple-Instance Logistic Regression with Lasso Penalty"
     journal: The R Journal
     date: 2017
@@ -166,16 +179,18 @@ awards:
     date: 12-2017
     awarder: Third Place
     description:
-      An internal competition in TSMC. There are over 100 teams to assist wafer factory decrease cost on the categorization of defects.
-      There are only 3000 defect/reference images provided. The goal is do our best to get high accuracy rate on testing set (1200 images.).
-      I used a 6-layer convolution neural network with two Xception modules and win third place in 91.2% accuracy rate.
+      An internal competition in TSMC. There are over 100 teams to assist the wafer factory decrease cost on the
+      categorization of defects. There are only 3000 defect/reference images provided. The goal is to do our best
+      to get a high accuracy rate on testing set (1200 images.). I use a 6-layer convolution neural network with
+      contains two types of the Xception modules and win third place in 91.2% accuracy rate.
   - title: Competition for Data Analysis with R in Taiwan
     date: 08-2014
     awarder: Honourable Mention
     description:
-      A national competition in Taiwan. There are over 30 teams to do a brainstorming on the data from a system to register the actual selling price of real estate.
-      Each team have one day to come out a topic and apply R language to complete and demonstrate the results.
-      Our team chose to predict the price of house from the messy data via LASSO approach.
+      A national competition in Taiwan. There are over 30 teams to do brainstorming on the data from a system to
+      register the actual selling price of real estate. Each team has one day to come out a topic and apply the
+      R language to complete and demonstrate the results. Our team chose to predict the prices of the houses
+      from the messy data via the LASSO approach.
 references:
   - name: Jeng-Min Chiou
     position: Research Fellow
