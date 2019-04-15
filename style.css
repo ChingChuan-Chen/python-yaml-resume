@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 @charset "utf-8";
 
 body {
@@ -9,7 +9,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     color: #363636;
-	line-height: 1.0;
+    line-height: 1.0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -38,7 +38,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 1050px;
-    height: 1380px;
+    height: 3200px;
     background-color: white;
 }
 
@@ -56,6 +56,10 @@ li {
     margin-left: 360px;
     min-height: 100%;
     padding: 20px;
+}
+
+#footer {
+    text-align: center;
 }
 
 #id {
@@ -184,10 +188,10 @@ li {
 
 #award_list:before, #education_list:before {
   width: 5px;
-  height: 100%;
+  height: 80%;
   position: absolute;
   left: 45px;
-  top: 0;
+  top: 10px;
   content: ' ';
   display: block;
   background: #32475c;
@@ -289,13 +293,13 @@ ul#summary_hl {
 
 #summary_hl .list-group-item {
 	margin-left: 1%;
-	padding: 3px 2px;
+	padding: 5px 7px;
 	border: 0px;
 }
 
 h3.skill-item {
     color: #637cd3;
-    font-size: 1.3em;
+    font-size: 1.15em;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -347,4 +351,10 @@ h3.skill-item {
 
 .list-group-item {
     padding: 7px 10px;
+}
+
+.achievement .list-group-item {
+  margin-left: 1%;
+  padding: 5px 7px;
+  border: 0px;
 }

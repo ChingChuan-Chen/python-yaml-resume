@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (C) 2018  Jamal Chen
+# Copyright (C) 2018-2019 Jamal Chen
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -34,12 +34,13 @@ if __name__ == '__main__':
       loader=FileSystemLoader('./'),
       autoescape=select_autoescape(['html', 'xml']),
       trim_blocks=True,
-      lstrip_blocks=True)
+      lstrip_blocks=True
+	)
   template = env.get_template(data["conf"]["template"])
   html_output = template.render(data)
   with open(data["conf"]["html"], 'w', encoding="utf8") as f:
     f.write(html_output)
-  
+
   # convert generated html to pdf
   ## !! Don't use opacity CSS which makes words blur in pdf !!
   options = {
@@ -47,7 +48,7 @@ if __name__ == '__main__':
     'encoding': "UTF-8"
   }
   tempFolder = "C:\\Users\\Jamal\\AppData\\Local\\Temp"
-  
+
   copyfile(data["conf"]["css"], tempFolder + "\\" + os.path.basename(data["conf"]["css"]))
   if "picture" in data["info"].keys():
     copyfile(data["info"]["picture"], tempFolder + "\\" + data["info"]["picture"])
