@@ -1,167 +1,141 @@
 conf:
-  yaml: resume.yaml
-  css: style.css
+  yaml: resume_yaml/resume.yaml
   template: template/resume.html
   html: resume.html
 info:
-  name: Ching-Chuan (Jamal) Chen
-  # alias: 陳慶全
-  tags:
+  name: Ching-Chuan Chen
+  titles:
     - Data Scientist
     - Data Engineer
 contact:
   phone: +886-966-676-326
   email: zw12356@gmail.com
-  website: chingchuan-chen.github.io/
+  website: chingchuan-chen.github.io
   profiles:
     - network: linkedin
-      url: www.linkedin.com/in/celestial0230
-    - network: github
-      url: github.com/ChingChuan-Chen
+      url: celestial0230
 summary:
-  description:
-    I am currently working as a senior data scientist in Trend Micro which is a global well-known cybersecurity company.
-    I am capable of developing efficient, well-designed applications of machine learning,
-    statistical methodologies, and data visualization.
+  description: |
+    I am currently working as a senior data scientist in Trend Micro which is a global well-known cybersecurity company. My main mission is to analyze the network behaviors of IoT devices.
+    Over the past three years, I design several systems of quality control for wafer manufacturing.
+    The following summarised my major achievements:
   highlights:
-    - a statistician who developed several systems to detect the significant changes in the wafer manufacturing processes.
-    - a skilled distributed computing engineer who has experience in the distributed database who built a system to process 6 billion data per day.
-    - an experienced programmer skilled at R, Python, Shell, MATLAB, Scala, and SQL.
-    - a machine learning expert who won third place in an internal competition over 100 teams.
+    - Process over 6 terabyte data from multiple sources per day for the quality control systems.
+    - Improve yield of product 10% by automatically discovering the dog tools.
+    - Reduce 30% out-of-control rate with the regression model.
+    - Reduce 500% scrapped products with a homemade change points detection algorithm.
+    - Achieve a 93.5 percent accuracy rate in the defect recognization via a homemade CNN model    -
 educations:
   - degree: Master
     area: Statistics
     university: National Cheng Kung University
     location: Tainan, TW
     gpa: 4.0 / 4.0
-    date: 09-2012 09-2014
-    thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection
-    abstract:
-      To overcome the curse of dimensionality on density ratio estimation, we propose a methodology to
-      perform dimension reduction. With several real datasets, our results show that the proposed
-      a method is better than the ones without dimension reduction.
+    date: SEPT. 2012 – JUNE 2014
+    highlights:
+      - "Thesis: A Classification Approach Based on Density Ratio Estimation with Subspace Projection / Advisor: Ray-Bing Chen"
+      - I get 95 points in the statistical methods, the generalized linear model, and statistical data mining classes, 92 points in the linear model class. I am confident in building models and inference of models.
+      - I get through the advanced probability theory class which is opened for Ph. D. students.
   - degree: Bachelor
     area: Economics and Statistics (Double major)
     university: National Cheng Kung University
     location: Tainan, TW
     gpa: 3.5 / 4.0
-    date: 09-2008 06-2012
-experiences:
+    date: SEPT. 2008 – JUNE 2012
+    highlights:
+      - With an advanced plan and hard work, I earn 175 credits for 2 majors within 4 years.
+experience:
   - organization: Trend Micro Inc.
     location: Taipei, Taiwan
     positions:
       - position: Senior Data Scientist
-        period: 01-2019 - Present
+        period: JAN. 2019 – Present
         department: Consumer
+    achievements:
+      - Automate the process of a report to save at least 50% time of the analysts.
   - organization: Taiwan Semiconductor Manufacturing Company
     location: Taichung, Taiwan
     positions:
-      - position: Senior Data Scientist / Engineer
-        period: 09-2018 - 01-2019
+      - position: Senior Engineer
+        period: SEPT. 2018 – JAN. 2019
         department: CIM Department
-      - position: Data Scientist / Engineer
-        period: 07-2016 - 08-2018
+      - position: Engineer
+        period: JULY 2016 – AUG. 2018
         department: CIM Department
-    target: Develop several systems of quality control on wafer manufacturing based on the data with high volume and complexity.
-    projects:
-      - project: WAT chart change detection
-        role: data engineer / data scientist
-        achievements:
-          - WAT is wafer acceptance test which is tested while finishing the process of a wafer.
-            There are no detailed orders in data. It only contains date information.
-          - Proposed an algorithm to detect the daily changes based on statistics.
-            It is useful to detect the changes between upper control limit and lower control limit.
-          - Parallelly processed 3 billions of records of data and output results of detections in 2 hours.
-            It is done by the R language and the MPI.
-      - project: Find out the key factors making wafer low yield
-        role: data scientist
-        achievements:
-          - Engage the statistical hypotheses to compare the yields of wafer produced by the different equipment.
-      - project: Performance improvement of control chart change detection
-        role: data engineer
-        achievements:
-          - Proposed a new architecture powered by MPI to improve the speed of detection algorithm.
-          - Reduced the implementation time from 8 hours to 40 minutes in the new architecture.
-          - Proposed an algorithm to dispatch the detection jobs with different running time which depends on data size.
-      - project: Reduce the rate of out-of-control quality measurements in the process
-        role: data scientist
-        achievements:
-          - Through the correlations, dig out the key factors to raise the rate of out-of-control.
-          - Use a robust correlation coefficient estimation with robust variance estimations to avoid the influential points.
-      - project: Build up a development environment for the data scientists
-        role: data engineer
-        achievements:
-          - Construct a consistent and centralized controlled development environment for the data scientists.
-          - Write a customized RStudio server Dockerfile to ensure everyone gets the same environment.
-      - project: Propose a methodology to recognize the relationships of quality measurements for the advanced process control
-        role: data scientist
-        achievements:
-          - Propose a methodology to estimate the effects of variables via a regression model.
-      - project: Data pipeline for processing history data and quality measurements data
-        role: organizer / data engineer
-        achievements:
-          - Propose a fast and reliable data pipeline powered by Spark in Scala and Python.
-            (UDAF is written in Scala.)
-          - Any new ETL can be set flexible and easy for users. This UI is done via R shiny.
-          - Good monitoring for job implementation and data quality.
-          - Stored 6 billions of records of data into Hive with full automation and good data quality.
-      - project: Propose, validate and construct a big data solution
-        role: organizer / data engineer
-        achievements:
-          - For the messy data query requirement for data analysts, I tested several solutions with SQL-like query language to test.
-          - Tested several big data solutions like Cassandra, Drill, and Hive.
-          - Made number of machine learning jobs can be done in 20 times shorter computing time than Oracle database.
+    achievements:
+      - Process over 6 terabyte data from multiple sources per day for the quality control systems.
+     - Improve yield of product 10% by automatically discovering the dog tools.
+     - Reduce 30% out-of-control rate via the regression model.
+     - Reduce 500% scrapped products via a homemade change points detection algorithm.
+     - Achieve a 93.5 percent accuracy rate in the defect recognization via a homemade CNN model.
+     - Decrease 50% debugging time of the data scientists with the docker which is written by me for providing a constant developing environment.
+     - Decrease the implementation time of the machine learning jobs by 20 times with a Hive cluster which I build in 5 months along with an ETL engine and monitoring.
+     - Increase the quality of the program and the productivity of the data scientists by training and sharing libraries which are designed and developed by me. It decreases the errors reported by users 50% and the developing time by 20%.
   - organization: Academia Sinica
     location: Taipei, Taiwan
     positions:
       - position: Research Assistant
-        period: 09-2015 - 06-2016
+        period: SEPT. 2015 – JUNE 2016
         department: Institute of Statistical Science
-    target: Develop the methodologies based on functional PCA applied to transportation.
-    projects:
-      - project: Imputation of functional data
-        role: data scientist
-        achievements:
-          - Use functional clustering to impute missing values in traffic data with lower RMSE than other methods.
-      - project: Create a data streaming for researches (data from Taiwan freeway bureau)
-        role: organizer / data engineer
-        achievements:
-          - Build a data pipeline to transform crawled data from XML to JSON and store them into a MongoDB.
-          - Develop a platform to view the data with d3.js via R shiny.
-      - project: Travel Time Estimation
-        role: data scientist
-        achievements:
-          - Study journals about travel time estimation.
-          - Realize the algorithms in journals and summarize the pros and cons.
-      - project: Organize and refactor the source codes of previous researches
-        role: organizer
-        achievements:
-          - Study the previous researches and learn how FPCA works.
-          - Remove several redundant blocks and improve the performance of critical functions.
+    achievements:
+     - Impute the missing values in the functional data with 40% lower RMSE than other methods.
+     - Automate the research data downloading to save 50% working time.
+     - Realize the algorithms of the travel time estimation in the journals.
+     - Provide a system for in-time data visualization via R shiny and d3.js.
   - organization: Ministry of National Defense
     location: Taichung, Taiwan
     positions:
       - position: Alternative military service
-        period: 10-2014 - 09-2015
+        period: OCT. 2014 - SEPT. 2015
         department: National Immigration Agency
 skills:
-  - name: R / MatLab
-    level: Master
+  - name: R
+    level: Advanced
   - name: Statistics
     level: Advanced
-  - name: Statistical Learning
+  - name: Machine Learning
     level: Advanced
-  - name: SQL / Python
+  - name: Data Visualization
+    level: Advanced
+  - name: Clustering
+    level: Advanced
+  - name: SQL
     level: High-Intermediate
-  - name: LaTeX / Bash
+  - name: Python
+    level: High-Intermediate
+  - name: MATLAB
+    level: High-Intermediate
+  - name: Shell Script
     level: Intermediate
-  - name: C++ / C#
+  - name: Spark
+    level: Intermediate
+  - name: Scala
+    level: Intermediate
+  - name: Hive
+    level: Intermediate
+  - name: MongoDB
+    level: Intermediate
+  - name: Docker
+    level: Intermediate
+  - name: Ansible
+    level: Intermediate
+  - name: LaTeX
+    level: Intermediate
+  - name: MPI
+    level: Intermediate
+  - name: C++
+    level: Basic
+  - name: C#
+    level: Basic
+  - name: Java
+    level: Basic
+  - name: AWS
     level: Basic
 languages:
   - language: Chinese
     fluency: Native speaker
   - language: English
-    fluency: Advanced
+    fluency: Advanced (TOEIC 820)
   - language: Japanese
     fluency: Intermediate (JLPT N3)
 journals:
@@ -173,24 +147,28 @@ journals:
     volume: 9
     number: 1
     website: https://journal.r-project.org/archive/2017/RJ-2017-013/index.html
-awards:
-  - title: TSMC Kaggle Competition for the Defect Recognition
-    date: 12-2017
-    awarder: Third Place
-    description:
-      An internal competition in TSMC. There are over 100 teams to assist the wafer factory decrease cost on the
-      categorization of defects. There are only 3000 defect/reference images provided. The goal is to do our best
-      to get a high accuracy rate on testing set (1200 images.). I use a 6-layer convolution neural network with
-      contains two types of the Xception modules and win third place in 91.2% accuracy rate.
-  - title: Competition for Data Analysis with R in Taiwan
-    date: 08-2014
-    awarder: Honourable Mention
-    description:
-      A national competition in Taiwan. There are over 30 teams to do brainstorming on the data from a system to
-      register the actual selling price of real estate. Each team has one day to come out a topic and apply the
-      R language to complete and demonstrate the results. Our team chose to predict the prices of the houses
-      from the messy data via the LASSO approach.
+Packages:
+  - name: RcppBlaze
+    description: |
+      I mimic the RcppArmadillo and RcppEigen to write this package to pack the Blaze for the R users.
+      Blaze is an open-source, high-performance C++ math library for dense and sparse arithmetic.
+      With its state-of-the-art Smart Expression Template implementation 'Blaze' combines the elegance
+      and ease of use of a domain-specific language with HPC-grade performance, making it one of the
+      most intuitive and fastest C++ math libraries available.
+  - name: milr
+    description: |
+      I write all C++ code for the performance and most R code matching the operations in R stat package.
+      The 'milr' package focuses on the predictive model for the multiple instance data set with binary
+      outcomes and performs the maximum likelihood estimation with the Expectation-Maximization algorithm
+      under the framework of logistic regression. Moreover, the LASSO penalty is attached to the likelihood
+      function for simultaneous parameter estimation and variable selection.
 references:
+  - name: Ray-Bing Chen
+    position: Professor
+    department: Department of Statistics
+    organization: National Cheng Kung University
+    phone: +886-6-275-7575 ext. 53645
+    email: rbchen@mail.ncku.edu.tw
   - name: Jeng-Min Chiou
     position: Research Fellow
     department: Institute of Statistical Science
