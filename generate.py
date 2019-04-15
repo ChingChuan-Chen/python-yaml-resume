@@ -17,7 +17,7 @@
 import sys, os, yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from shutil import copyfile
-import pdfkit
+# import pdfkit
 
 if __name__ == '__main__':
   if len(sys.argv) < 2:
@@ -43,13 +43,13 @@ if __name__ == '__main__':
 
   # convert generated html to pdf
   ## !! Don't use opacity CSS which makes words blur in pdf !!
-  options = {
-    'page-size': 'Letter',
-    'encoding': "UTF-8"
-  }
-  tempFolder = "C:\\Users\\Jamal\\AppData\\Local\\Temp"
-
-  copyfile(data["conf"]["css"], tempFolder + "\\" + os.path.basename(data["conf"]["css"]))
-  if "picture" in data["info"].keys():
-    copyfile(data["info"]["picture"], tempFolder + "\\" + data["info"]["picture"])
-  pdfkit.from_string(html_output, data["conf"]["pdf"], options=options)
+  # options = {
+  #   'page-size': 'Letter',
+  #   'encoding': "UTF-8"
+  # }
+  # tempFolder = "C:\\Users\\Jamal\\AppData\\Local\\Temp"
+  # 
+  # copyfile(data["conf"]["css"], tempFolder + "\\" + os.path.basename(data["conf"]["css"]))
+  # if "picture" in data["info"].keys():
+  #   copyfile(data["info"]["picture"], tempFolder + "\\" + data["info"]["picture"])
+  # pdfkit.from_string(html_output, data["conf"]["pdf"], options=options)

@@ -1,9 +1,8 @@
 conf:
   yaml: resume.yaml
   css: style.css
-  template: resume.html.j2
+  template: template/resume.html
   html: resume.html
-  pdf: resume.pdf
 info:
   name: Ching-Chuan (Jamal) Chen
   # alias: 陳慶全
@@ -20,16 +19,15 @@ contact:
     - network: github
       url: github.com/ChingChuan-Chen
 summary:
-  description: |
-    I am currently working as a senior data scientist in Trend Micro which is a global well-known cybersecurity company. My main mission is to analyze the network behaviors of IoT devices.
-    Over the past three years, I design several systems of quality control for wafer manufacturing.
-    The following summarised my major achievements:
+  description:
+    I am currently working as a senior data scientist in Trend Micro which is a global well-known cybersecurity company.
+    I am capable of developing efficient, well-designed applications of machine learning,
+    statistical methodologies, and data visualization.
   highlights:
-    - Process over 6 terabyte data from multiple sources per day for the quality control systems.
-    - Improve yield of product 10% by automatically discovering the dog tools.
-    - Reduce 30% out-of-control rate with the regression model.
-    - Reduce 500% scrapped products with a homemade change points detection algorithm.
-    - Achieve a 93.5 percent accuracy rate in the defect recognization via a homemade CNN model    -
+    - a statistician who developed several systems to detect the significant changes in the wafer manufacturing processes.
+    - a skilled distributed computing engineer who has experience in the distributed database who built a system to process 6 billion data per day.
+    - an experienced programmer skilled at R, Python, Shell, MATLAB, Scala, and SQL.
+    - a machine learning expert who won third place in an internal competition over 100 teams.
 educations:
   - degree: Master
     area: Statistics
